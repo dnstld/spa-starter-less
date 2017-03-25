@@ -322,6 +322,7 @@ body {
 @media (min-width: 48em) {
   .menu-principal nav > ul {
     width: 70%;
+    margin-top: 0;
     padding-top: 0;
     padding-bottom: 0;
     text-align: center;

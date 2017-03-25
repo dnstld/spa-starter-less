@@ -38,10 +38,13 @@ var Pousada = {
     "use strict";
 
     var hamburguer = $('#hamburguer'),
-        menu = $('.menu-principal');
+        menu = $('.menu-principal'),
+        menuMobile = $('.menu-principal-mobile');
 
     hamburguer.on('click', function() {
       menu.toggleClass('toggleMenu');
+      menuMobile.toggleClass('toggleMenuMobile');
+      hamburguer.toggleClass('toggleMenuMobile');
     });
   }
 }

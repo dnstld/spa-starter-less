@@ -7,10 +7,15 @@
 	z-index: 10;
 	padding: 10px 20px;
 	font-size: 40px;
+	color: @cor-principal;
 
 	.tablet({
 		display: none;
 	});
+
+	&.toggleMenuMobile {
+		color: #fff;
+	}
 }
 
 .menu-principal-mobile {
@@ -26,6 +31,10 @@
 		display: none;
 	});
 
+	&.toggleMenuMobile {
+		display: none;
+	}
+
 	> img {
 		height: 100%;
 	}
@@ -35,6 +44,10 @@
 	width: 100%;
 	height: 100%;
 	background-color: @cor-principal;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
 	display: none;
 
 	&.toggleMenu {
@@ -65,8 +78,7 @@
 			.box-sizing();
 			width: 100%;
 			height: 100px;
-			padding-bottom: 20px;
-			border-bottom: 1px solid rgba(255, 255, 255, .2);
+			height: calc(~'100px - 20px');
 			text-align: center;
 
 			.tablet({
@@ -92,14 +104,16 @@
 					});
 				}
 				> img {
-					height: inherit;
+					height: 100%;
 				}
 			}
 		}
 		> ul {
 			.clearfix();
+			margin-top: 10px;
 			padding-top: 20px;
 			padding-bottom: 20px;
+			border-top: 1px solid rgba(255, 255, 255, .2);
 
 			.tablet({
 				width: 70%;

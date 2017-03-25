@@ -1,0 +1,75 @@
+/**
+ * mobile
+ * @description mobile landscape breakpoint 480px
+ */
+.mobile(@rules) {
+  @media (min-width: 30em) {
+    @rules();
+  }
+}
+/**
+ * tablet
+ * @description tablet breakpoint 768px
+ */
+.tablet(@rules) {
+  @media (min-width: 48em) {
+  	@rules();
+  }
+}
+/**
+ * tablet
+ * @description tablet breakpoint 992px
+ */
+.desktop(@rules) {
+  @media (min-width: 62em) {
+  	@rules();
+  }
+}
+/**
+ * tablet
+ * @description tablet breakpoint 1200px
+ */
+.huge(@rules) {
+  @media (min-width: 75em) {
+  	@rules();
+  }
+}
+/**
+ * box-sizing
+ * @description the box-sizing property
+ */
+.box-sizing(@type: border-box) {
+	-webkit-box-sizing: @type;
+	-moz-box-sizing:    @type;
+	box-sizing:         @type;
+}
+/**
+ * clearfix
+ * @description the box-sizing property
+ */
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+/**
+ * btn
+ * @description the box-sizing property
+ */
+.btn(@bg-color: @color-secondary, @color: #fff) {
+  display: inline-block;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  color: @color;
+  background-color: @bg-color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: mix(@bg-color, #000, 90%);
+  }
+}

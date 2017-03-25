@@ -25,19 +25,24 @@ var Pousada = {
   init: function() {
     "use strict";
 
-    Pousada.initFunction();
+    Pousada.toggleMenu();
   },
    /**
-   * initFunction
+   * toggleMenu
    * @access public
-   * @desc initFunction
+   * @desc mostra/esconde o menu em mobile
    *
    * @return {Void}
    */
-  initFunction: function() {
-      "use strict";
+  toggleMenu: function() {
+    "use strict";
 
-      console.log("Pousada você que sabe");
+    var hamburguer = $('#hamburguer'),
+        menu = $('.menu-principal');
+
+    hamburguer.on('click', function() {
+      menu.toggleClass('toggleMenu');
+    });
   }
 }
 

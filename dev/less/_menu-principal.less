@@ -1,0 +1,162 @@
+#hamburguer {
+	display: block;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	padding: 20px;
+}
+
+.menu-principal {
+	width: 100%;
+	height: 100%;
+	background-color: @cor-principal;
+	display: none;
+
+	&.toggleMenu {
+		display: block;
+	}
+
+	.tablet({
+		display: block;
+		position: fixed;
+		z-index: 1;
+		height: 100px;
+		background-color: #fff;
+		border-bottom: 2px @cor-principal;
+	});
+
+	nav {
+		.clearfix();
+		.box-sizing();
+		max-width: 1200px;
+		height: 100%;
+		padding: 10px;
+		margin: 0 auto;
+		position: relative;
+
+		> header {
+			.box-sizing();
+			width: 100%;
+			height: 100px;
+			padding-bottom: 20px;
+			border-bottom: 1px solid rgba(255, 255, 255, .2);
+			text-align: center;
+
+			.tablet({
+				width: 100px;
+				float: left;
+				border-bottom: none;
+			});
+			
+			> a {
+				display: block;
+				height: 100%;
+
+				&.logoAlternativo {
+					.tablet({
+						display: none;
+					});
+				}
+				&.logo {
+					display: none;
+
+					.tablet({
+						display: block;
+					});
+				}
+				> img {
+					height: inherit;
+				}
+			}
+		}
+		> ul {
+			.clearfix();
+			padding-top: 20px;
+			padding-bottom: 20px;
+
+			.tablet({
+				width: 70%;
+				padding-top: 0;
+				padding-bottom: 0;
+				text-align: center;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: -webkit-translate(-50%, -50%);
+				transform: -moz-translate(-50%, -50%);
+				transform: -o-translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+			});
+
+			li {
+				.tablet({
+					display: inline-block;
+				});
+
+				a {
+					display: block;
+					height: 40px;
+					line-height: 40px;
+					color: #fff;
+					font-size: 18px;
+					text-transform: uppercase;
+					text-decoration: none;
+					text-align: center;
+
+					.tablet({
+						font-size: 14px;
+						color: @cor-principal;
+						padding: 0 10px;
+					});
+					.desktop({
+						font-size: 16px;
+					});
+					.huge({
+						font-size: 18px;
+					});
+				}
+			}
+		}
+		> aside {
+			.clearfix();
+
+			.tablet({
+				width: 40px;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				right: 0;
+			});
+
+			ul {
+				.clearfix();
+
+				.tablet({
+					position: absolute;
+					top: 50%;
+					right: 0;
+					transform: -webkit-translateY(-50%);
+					transform: -moz-translateY(-50%);
+					transform: -o-translateY(-50%);
+					transform: translateY(-50%);
+				});
+
+				li {
+					a {
+						display: block;
+						width: 40px;
+						height: 40px;
+						line-height: 40px;
+						text-align: center;
+						margin: 0 auto;
+
+						&.facebook {
+							color: red;
+						}
+					}
+				}
+			}
+		}
+	}
+}

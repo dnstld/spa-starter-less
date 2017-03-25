@@ -34,7 +34,7 @@ gulp.task("browserSync", function() {
 			baseDir: "./",
 		},
 		browser: "google-chrome",
-		notify: true
+		notify: false
 	});
 });
 

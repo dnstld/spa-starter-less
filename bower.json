@@ -1,0 +1,13 @@
+{
+  "name": "pousada",
+  "description": "pousada voce que sabe",
+  "main": "",
+  "authors": [
+    "denis toledo"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/rogersmuk/pousadavocequesabe",
+  "devDependencies": {
+    "eric-mayer-reset-less-sass": "https://github.com/dnstld/eric-mayer-reset-less-sass.git"
+  }
+}

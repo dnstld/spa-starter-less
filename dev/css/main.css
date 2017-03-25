@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -134,6 +135,13 @@ body {
   color: #fff;
   font-family: Verdana, Geneva, sans-serif;
 }
+@font-face {
+  font-family: 'pousada-icons';
+  src: url('../../assets/icons/pousada.eot?ifary1');
+  src: url('../../assets/icons/pousada.eot?ifary1#iefix') format('embedded-opentype'), url('../../assets/icons/pousada.ttf?ifary1') format('truetype'), url('../../assets/icons/pousada.woff?ifary1') format('woff'), url('../../assets/icons/pousada.svg?ifary1#remoto-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 /**
  * mobile
  * @description mobile landscape breakpoint 480px
@@ -173,7 +181,30 @@ body {
   top: 0;
   right: 0;
   z-index: 10;
-  padding: 20px;
+  padding: 10px 20px;
+  font-size: 40px;
+}
+#hamburguer::before {
+  content: "\e908";
+}
+#hamburguer::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 40px;
+  text-align: center;
+  vertical-align: middle;
+}
+@media (min-width: 48em) {
+  #hamburguer {
+    display: none;
+  }
 }
 .menu-principal {
   width: 100%;
@@ -313,7 +344,7 @@ body {
     height: 100%;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 20px;
   }
 }
 .menu-principal nav > aside ul:after {
@@ -334,12 +365,31 @@ body {
 }
 .menu-principal nav > aside ul li a {
   display: block;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
   text-align: center;
   margin: 0 auto;
+  color: #fff;
+  border: none;
+  text-decoration: none;
 }
-.menu-principal nav > aside ul li a.facebook {
-  color: red;
+@media (min-width: 48em) {
+  .menu-principal nav > aside ul li a {
+    color: #1a1a1a;
+  }
+}
+.menu-principal nav > aside ul li a.facebook::before {
+  content: "\e906";
+}
+.menu-principal nav > aside ul li a.facebook::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 24px;
+  text-align: center;
+  vertical-align: middle;
 }

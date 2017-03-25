@@ -206,6 +206,25 @@ body {
     display: none;
   }
 }
+.menu-principal-mobile {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 2px #1a1a1a;
+}
+@media (min-width: 48em) {
+  .menu-principal-mobile {
+    display: none;
+  }
+}
+.menu-principal-mobile > img {
+  height: 100%;
+}
 .menu-principal {
   width: 100%;
   height: 100%;
@@ -219,6 +238,8 @@ body {
   .menu-principal {
     display: block;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 1;
     height: 100px;
     background-color: #fff;
@@ -392,4 +413,50 @@ body {
   font-size: 24px;
   text-align: center;
   vertical-align: middle;
+}
+.header-principal {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.header-principal > .seta {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  opacity: .4;
+}
+.header-principal > .seta::before {
+  content: "\e901";
+}
+.header-principal > .seta::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 36px;
+  text-align: center;
+  vertical-align: middle;
+}
+.header-principal > h1 {
+  text-align: center;
+  line-height: 120%;
+}
+.banner-principal {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: url(../../assets/images/loader.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-width: 48em) {
+  .banner-principal {
+    margin-top: 100px;
+  }
 }

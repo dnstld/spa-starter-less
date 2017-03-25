@@ -13,6 +13,24 @@
 	});
 }
 
+.menu-principal-mobile {
+	.box-sizing();
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+	text-align: center;
+	background-color: #fff;
+	border-bottom: 2px @cor-principal;
+
+	.tablet({
+		display: none;
+	});
+
+	> img {
+		height: 100%;
+	}
+}
+
 .menu-principal {
 	width: 100%;
 	height: 100%;
@@ -26,6 +44,8 @@
 	.tablet({
 		display: block;
 		position: fixed;
+		top: 0;
+		left: 0;
 		z-index: 1;
 		height: 100px;
 		background-color: #fff;

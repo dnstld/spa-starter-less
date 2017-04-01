@@ -135,6 +135,9 @@ body {
   color: #fff;
   font-family: Verdana, Geneva, sans-serif;
 }
+strong {
+  font-weight: bold;
+}
 @font-face {
   font-family: 'pousada-icons';
   src: url('../../assets/icons/pousada.eot?ifary1');
@@ -460,19 +463,25 @@ body {
   text-align: center;
   line-height: 120%;
 }
-@media (min-width: 48em) {
-  .header-principal > h1 {
-    font-size: 18px;
-  }
-}
-@media (min-width: 62em) {
+@media (min-width: 30em) {
   .header-principal > h1 {
     font-size: 20px;
+  }
+}
+@media (min-width: 48em) {
+  .header-principal > h1 {
+    font-size: 22px;
   }
 }
 @media (min-width: 62em) {
   .header-principal > h1 {
     font-size: 24px;
+    padding: 20px;
+  }
+}
+@media (min-width: 62em) {
+  .header-principal > h1 {
+    font-size: 26px;
   }
 }
 .banner-principal {
@@ -486,5 +495,46 @@ body {
 @media (min-width: 48em) {
   .banner-principal {
     margin-top: 120px;
+  }
+}
+.texto-home {
+  margin: 10px;
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+@media (min-width: 62em) {
+  .texto-home {
+    padding: 40px;
+  }
+}
+.texto-home > p {
+  max-width: 80%;
+  text-align: center;
+  line-height: 120%;
+  margin-top: 10px;
+  margin: 10px auto 0;
+}
+.texto-home > p:first-child {
+  margin-top: 0;
+}
+@media (min-width: 30em) {
+  .texto-home > p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 48em) {
+  .texto-home > p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 62em) {
+  .texto-home > p {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 75em) {
+  .texto-home > p {
+    font-size: 24px;
   }
 }

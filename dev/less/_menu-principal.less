@@ -136,9 +136,9 @@
 				});
 
 				a {
+					.clearfix;
 					display: block;
 					height: 40px;
-					line-height: 40px;
 					color: #fff;
 					font-size: 18px;
 					text-transform: uppercase;
@@ -156,6 +156,31 @@
 					.huge({
 						font-size: 18px;
 					});
+
+					> .icone {
+						display: none;
+						margin-bottom: 10px;
+
+						.tablet({
+							display: block;
+						});
+
+						&.home {
+							.icon(@icon-home);
+						}
+						&.suites {
+							.icon(@icon-suites);
+						}
+						&.promocoes {
+							.icon(@icon-promocoes);
+						}
+						&.sobre {
+							.icon(@icon-coracao);
+						}
+						&.localizacao {
+							.icon(@icon-map);
+						}
+					}
 				}
 			}
 		}

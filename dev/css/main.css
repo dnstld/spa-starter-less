@@ -140,8 +140,8 @@ strong {
 }
 @font-face {
   font-family: 'pousada-icons';
-  src: url('../../assets/icons/pousada.eot?ifary1');
-  src: url('../../assets/icons/pousada.eot?ifary1#iefix') format('embedded-opentype'), url('../../assets/icons/pousada.ttf?ifary1') format('truetype'), url('../../assets/icons/pousada.woff?ifary1') format('woff'), url('../../assets/icons/pousada.svg?ifary1#remoto-icons') format('svg');
+  src: url('../../assets/icons/pousada.eot?5fvy3s');
+  src: url('../../assets/icons/pousada.eot?5fvy3s#iefix') format('embedded-opentype'), url('../../assets/icons/pousada.ttf?5fvy3s') format('truetype'), url('../../assets/icons/pousada.woff?5fvy3s') format('woff'), url('../../assets/icons/pousada.svg?5fvy3s#remoto-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -346,12 +346,16 @@ strong {
 .menu-principal nav > ul li a {
   display: block;
   height: 40px;
-  line-height: 40px;
   color: #fff;
   font-size: 18px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+}
+.menu-principal nav > ul li a:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 @media (min-width: 48em) {
   .menu-principal nav > ul li a {
@@ -369,6 +373,100 @@ strong {
   .menu-principal nav > ul li a {
     font-size: 18px;
   }
+}
+.menu-principal nav > ul li a > .icone {
+  display: none;
+  margin-bottom: 10px;
+}
+@media (min-width: 48em) {
+  .menu-principal nav > ul li a > .icone {
+    display: block;
+  }
+}
+.menu-principal nav > ul li a > .icone.home::before {
+  content: "\e917";
+}
+.menu-principal nav > ul li a > .icone.home::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+.menu-principal nav > ul li a > .icone.suites::before {
+  content: "\e919";
+}
+.menu-principal nav > ul li a > .icone.suites::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+.menu-principal nav > ul li a > .icone.promocoes::before {
+  content: "\e918";
+}
+.menu-principal nav > ul li a > .icone.promocoes::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+.menu-principal nav > ul li a > .icone.sobre::before {
+  content: "\e905";
+}
+.menu-principal nav > ul li a > .icone.sobre::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+.menu-principal nav > ul li a > .icone.localizacao::before {
+  content: "\e90a";
+}
+.menu-principal nav > ul li a > .icone.localizacao::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
 }
 .menu-principal nav > aside:after {
   content: "";
@@ -508,7 +606,8 @@ strong {
   }
 }
 .texto-home > p {
-  max-width: 80%;
+  width: 90%;
+  max-width: 90%;
   text-align: center;
   line-height: 120%;
   margin-top: 10px;
@@ -529,12 +628,8 @@ strong {
 }
 @media (min-width: 62em) {
   .texto-home > p {
-    font-size: 22px;
-    margin-top: 20px;
-  }
-}
-@media (min-width: 75em) {
-  .texto-home > p {
-    font-size: 24px;
+    line-height: 150%;
+    width: 70%;
+    max-width: 70%;
   }
 }

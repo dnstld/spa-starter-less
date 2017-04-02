@@ -1,0 +1,105 @@
+.diferenciais-pousada {
+	background: url('./../../assets/images/suites/brilhante/suite-brilhante-pousada-voce-que-sabe-01.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 30px;
+
+	.mobile({
+		padding: 50px;
+	});
+	.tablet({
+		padding: 100px;
+	});
+	.desktop({
+		padding: 150px;
+	});
+
+	> .diferenciais {
+		border-radius: 5px;
+		padding: 10px;
+		background-color: rgba(0, 0, 0, .9);
+
+		.mobile({
+			padding: 20px;
+		});
+		.tablet({
+			padding: 40px;
+		});
+		.desktop({
+			width: 700px;
+			max-width: 700px;
+			margin: 0 auto;
+			padding: 60px;
+		});
+		.huge({
+			padding: 80px;
+		});
+
+		> h1 {
+			font-size: 18px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			text-align: center;
+			border-bottom: 1px solid rgba(255, 255, 255, .2);
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+
+			.mobile({
+				font-size: 20px;
+				margin-bottom: 20px;
+				padding-bottom: 20px;
+			});
+			.tablet({
+				font-size: 22px;
+			});
+			.desktop({
+				font-size: 24px;
+				margin-bottom: 30px;
+				padding-bottom: 30px;
+			});
+			.huge({
+				font-size: 26px;
+			});
+		}
+		> ul {
+			li {
+				margin-top: 10px;
+				line-height: 120%;
+
+				&:first-child {
+					margin-top: 0;
+				}
+				> .icone {
+					margin-right: 5px;
+
+					&.sinuca {
+						.icon(@icon-sinuca);
+					}
+					&.coracao {
+						.icon(@icon-coracao);
+					}
+					&.churrasqueira {
+						.icon(@icon-churrasqueira);
+					}
+					&.carro {
+						.icon(@icon-car);
+					}
+					&.massagem {
+						.icon(@icon-massagem);
+					}
+					&.vintage {
+						.icon(@icon-vintage);
+					}
+					&.oriental {
+						.icon(@icon-oriental);
+					}
+					&.hidro {
+						.icon(@icon-water);
+					}
+				}
+			}
+		}
+	}
+}

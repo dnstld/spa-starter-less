@@ -138,6 +138,14 @@ body {
 strong {
   font-weight: bold;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
 @font-face {
   font-family: 'pousada-icons';
   src: url('../../assets/icons/pousada.eot?5fvy3s');
@@ -632,4 +640,234 @@ strong {
     width: 70%;
     max-width: 70%;
   }
+}
+.diferenciais-pousada {
+  background: url('../../assets/images/suites/brilhante/suite-brilhante-pousada-voce-que-sabe-01.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 30px;
+}
+@media (min-width: 30em) {
+  .diferenciais-pousada {
+    padding: 50px;
+  }
+}
+@media (min-width: 48em) {
+  .diferenciais-pousada {
+    padding: 100px;
+  }
+}
+@media (min-width: 62em) {
+  .diferenciais-pousada {
+    padding: 150px;
+  }
+}
+.diferenciais-pousada > .diferenciais {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+@media (min-width: 30em) {
+  .diferenciais-pousada > .diferenciais {
+    padding: 20px;
+  }
+}
+@media (min-width: 48em) {
+  .diferenciais-pousada > .diferenciais {
+    padding: 40px;
+  }
+}
+@media (min-width: 62em) {
+  .diferenciais-pousada > .diferenciais {
+    width: 700px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 60px;
+  }
+}
+@media (min-width: 75em) {
+  .diferenciais-pousada > .diferenciais {
+    padding: 80px;
+  }
+}
+.diferenciais-pousada > .diferenciais > h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+@media (min-width: 30em) {
+  .diferenciais-pousada > .diferenciais > h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 48em) {
+  .diferenciais-pousada > .diferenciais > h1 {
+    font-size: 22px;
+  }
+}
+@media (min-width: 62em) {
+  .diferenciais-pousada > .diferenciais > h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 75em) {
+  .diferenciais-pousada > .diferenciais > h1 {
+    font-size: 26px;
+  }
+}
+.diferenciais-pousada > .diferenciais > ul li {
+  margin-top: 10px;
+  line-height: 120%;
+}
+.diferenciais-pousada > .diferenciais > ul li:first-child {
+  margin-top: 0;
+}
+.diferenciais-pousada > .diferenciais > ul li > .icone {
+  margin-right: 5px;
+}
+.diferenciais-pousada > .diferenciais > ul li > .icone.sinuca::before {
+  content: "\e90f";
+}
+.diferenciais-pousada > .diferenciais > ul li > .icone.sinuca::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+.diferenciais-pousada > .diferenciais > ul li > .icone.coracao::before {
+  content: "\e905";
+}
+.diferenciais-pousada > .diferenciais > ul li > .icone.coracao::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+.diferenciais-pousada > .diferenciais > ul li > .icone.churrasqueira::before {
+  content: "\e903";
+}
+.diferenciais-pousada > .diferenciais > ul li > .icone.churrasqueira::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+.diferenciais-pousada > .diferenciais > ul li > .icone.carro::before {
+  content: "\e902";
+}
+.diferenciais-pousada > .diferenciais > ul li > .icone.carro::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+.diferenciais-pousada > .diferenciais > ul li > .icone.massagem::before {
+  content: "\e90b";
+}
+.diferenciais-pousada > .diferenciais > ul li > .icone.massagem::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+.diferenciais-pousada > .diferenciais > ul li > .icone.vintage::before {
+  content: "\e911";
+}
+.diferenciais-pousada > .diferenciais > ul li > .icone.vintage::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+.diferenciais-pousada > .diferenciais > ul li > .icone.oriental::before {
+  content: "\e90c";
+}
+.diferenciais-pousada > .diferenciais > ul li > .icone.oriental::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+.diferenciais-pousada > .diferenciais > ul li > .icone.hidro::before {
+  content: "\e912";
+}
+.diferenciais-pousada > .diferenciais > ul li > .icone.hidro::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
 }

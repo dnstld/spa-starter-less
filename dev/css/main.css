@@ -674,7 +674,7 @@ input:focus {
 .diferenciais-pousada > .diferenciais {
   border-radius: 5px;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #1a1a1a;
 }
 @media (min-width: 48em) {
   .diferenciais-pousada > .diferenciais {

@@ -192,9 +192,12 @@ input:focus {
   top: 0;
   right: 0;
   z-index: 10;
-  padding: 10px 20px;
-  font-size: 40px;
+  padding: 5px 10px;
+  margin: 10px;
+  font-size: 30px;
+  border-radius: 5px;
   color: #1a1a1a;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 #hamburguer::before {
   content: "\e908";
@@ -642,7 +645,10 @@ input:focus {
   }
 }
 .diferenciais-pousada {
-  background: url('../../assets/images/suites/brilhante/suite-brilhante-pousada-voce-que-sabe-01.jpg') no-repeat center center fixed;
+  background-image: url('../../assets/images/suites/brilhante/suite-brilhante-pousada-voce-que-sabe-01.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -662,17 +668,13 @@ input:focus {
 @media (min-width: 62em) {
   .diferenciais-pousada {
     padding: 150px;
+    background-attachment: fixed;
   }
 }
 .diferenciais-pousada > .diferenciais {
   border-radius: 5px;
-  padding: 10px;
+  padding: 20px;
   background-color: rgba(0, 0, 0, 0.9);
-}
-@media (min-width: 30em) {
-  .diferenciais-pousada > .diferenciais {
-    padding: 20px;
-  }
 }
 @media (min-width: 48em) {
   .diferenciais-pousada > .diferenciais {

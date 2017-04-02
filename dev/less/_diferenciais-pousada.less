@@ -1,5 +1,8 @@
 .diferenciais-pousada {
-	background: url('./../../assets/images/suites/brilhante/suite-brilhante-pousada-voce-que-sabe-01.jpg') no-repeat center center fixed;
+	background-image: url('./../../assets/images/suites/brilhante/suite-brilhante-pousada-voce-que-sabe-01.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: scroll;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -14,16 +17,14 @@
 	});
 	.desktop({
 		padding: 150px;
+		background-attachment: fixed;
 	});
 
 	> .diferenciais {
 		border-radius: 5px;
-		padding: 10px;
+		padding: 20px;
 		background-color: rgba(0, 0, 0, .9);
 
-		.mobile({
-			padding: 20px;
-		});
 		.tablet({
 			padding: 40px;
 		});

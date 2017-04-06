@@ -73,7 +73,7 @@ gulp.task('js', function() {
 });
 
 gulp.task('html', function() {
-	return gulp.src('index.html')
+	return gulp.src('*.html')
 		.pipe(deleteLines({
 			'filters': [
 				/<link\s+rel=/i

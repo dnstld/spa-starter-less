@@ -1,0 +1,21 @@
+.rodape-principal {	
+	.box-sizing();
+	padding: 10px;
+	text-align: center;
+
+	> section {
+		> p {
+			font-size: 8px;
+			line-height: 150%;
+
+			.mobile({
+				font-size: 11px;
+			});
+
+			> a {
+				color: @cor-logo;
+				text-decoration: none;
+			}
+		}
+	}
+}

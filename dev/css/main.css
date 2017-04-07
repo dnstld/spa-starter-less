@@ -603,6 +603,14 @@ input:focus {
     font-size: 26px;
   }
 }
+.banner-principal {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: url(../../assets/images/loader.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .texto-home {
   margin: 10px;
   padding: 20px;
@@ -869,4 +877,24 @@ input:focus {
   font-size: 16px;
   text-align: center;
   vertical-align: middle;
+}
+.rodape-principal {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+.rodape-principal > section > p {
+  font-size: 8px;
+  line-height: 150%;
+}
+@media (min-width: 30em) {
+  .rodape-principal > section > p {
+    font-size: 11px;
+  }
+}
+.rodape-principal > section > p > a {
+  color: red;
+  text-decoration: none;
 }

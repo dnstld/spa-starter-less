@@ -489,6 +489,9 @@ input:focus {
   text-align: center;
   vertical-align: middle;
 }
+.menu-principal nav > ul li a > .icone.ativo {
+  color: red;
+}
 .menu-principal nav > aside:after {
   content: "";
   display: table;

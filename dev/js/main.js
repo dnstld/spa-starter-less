@@ -43,6 +43,7 @@ var Pousada = {
 
     hamburguer.on('click', function() {
       menu.toggleClass('toggleMenu');
+      $('body').toggleClass('noScroll');
       menuMobile.toggleClass('toggleMenuMobile');
       hamburguer.toggleClass('toggleMenuMobile');
     });

@@ -156,6 +156,9 @@ input:focus {
     display: block;
   }
 }
+.noScroll {
+  overflow: hidden;
+}
 @font-face {
   font-family: 'pousada-icons';
   src: url('../../assets/icons/pousada.eot?5fvy3s');

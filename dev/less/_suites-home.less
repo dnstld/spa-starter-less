@@ -1,0 +1,174 @@
+.suites-home {
+	.clearfix;
+	background-color: #fff;
+	padding: 20px;
+	color: @cor-principal;
+
+	> h1 {
+		font-size: 18px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		text-align: center;
+		border-bottom: 1px solid rgba(255, 255, 255, .2);
+		margin-bottom: 10px;
+
+		.tablet({
+			font-size: 22px;
+		});
+		.desktop({
+			font-size: 24px;
+		});
+		.huge({
+			font-size: 26px;
+		});
+	}
+	> ul {
+		.clearfix;
+		width: 90%;
+		max-width: 90%;
+		margin: 0 auto;
+
+		li {
+			a {
+				.box-sizing;
+				display: block;
+				width: 45%;
+				float: left;
+				margin: 2.5%;
+				box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+				border: 1px solid #f1f1f1;
+				position: relative;
+
+				.tablet({
+					width: 20%;
+				});
+
+				> .imagem {
+					display: block;
+					position: relative;
+					overflow: hidden;
+					width: 90%;
+					margin: 5%;
+
+					&:after {
+						content: "";
+						display: block;
+						float: left;
+						padding-top: 100%;
+					}
+					&:before {
+						content: "";
+						display: block;
+						background-size: cover;
+						background-repeat: no-repeat;
+						position: absolute;
+						top: 0;
+						right: 0;
+						bottom: 0;
+						left: 0;
+					}
+					&.prata {
+						&:before {
+							background-image: url("../../assets/images/suites/prata/thumb-suite-prata-pousada-voce-que-sabe.jpg");
+						}
+					}
+					&.rubi-duplex {
+						&:before {
+							background-image: url("../../assets/images/suites/rubi-duplex/thumb-suite-rubi-duplex-pousada-voce-que-sabe.jpg");
+						}
+					}
+					&.esmeralda {
+						&:before {
+							background-image: url("../../assets/images/suites/esmeralda/thumb-suite-esmeralda-pousada-voce-que-sabe.jpg");
+						}
+					}
+					&.ouro {
+						&:before {
+							background-image: url("../../assets/images/suites/ouro/thumb-suite-ouro-pousada-voce-que-sabe.jpg");
+						}
+					}
+					&.brilhante {
+						&:before {
+							background-image: url("../../assets/images/suites/brilhante/thumb-suite-brilhante-pousada-voce-que-sabe.jpg");
+						}
+					}
+					&.diamante {
+						&:before {
+							background-image: url("../../assets/images/suites/diamante/thumb-suite-diamante-pousada-voce-que-sabe.jpg");
+						}
+					}
+					&.perola {
+						&:before {
+							background-image: url("../../assets/images/suites/perola/thumb-suite-perola-pousada-voce-que-sabe.jpg");
+						}
+					}
+					&.rubi {
+						&:before {
+							background-image: url("../../assets/images/suites/rubi/thumb-suite-rubi-pousada-voce-que-sabe.jpg");
+						}
+					}
+				}
+				> .preco {
+					display: block;
+					position: absolute;
+					top: 10%;
+					right: 0;
+					padding: 5px;
+					background-color: @cor-principal;
+					color: #fff;
+					font-size: 14px;
+
+					.desktop({
+						font-size: 16px;
+						padding: 10px;
+					});
+					.huge({
+						font-size: 18px;
+					});
+				}
+				> .titulo {
+					display: inline-block;
+					margin-left: 5%;
+					margin-bottom: 5%;
+					float: left;
+					font-size: 14px;
+
+					.desktop({
+						font-size: 16px;
+					});
+					.huge({
+						font-size: 18px;
+					});
+				}
+				> .icone {
+					display: inline-block;
+					float: right;
+					width: 16px;
+					height: 16px;
+					text-align: center;
+					line-height: 16px;
+					border-radius: 50%;
+					background-color: @cor-principal;
+					color: #fff;
+					font-size: 12px;
+					font-weight: bold;
+					margin-right: 5%;
+					opacity: .3;
+
+					.desktop({
+						width: 18px;
+						height: 18px;
+						line-height: 18px;
+						font-size: 14px;
+					});
+					.huge({
+						width: 20px;
+						height: 20px;
+						line-height: 20px;
+						font-size: 16px;
+					});
+				}
+			}
+		}
+	}
+}

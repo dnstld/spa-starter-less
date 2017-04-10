@@ -247,7 +247,6 @@ input:focus {
   text-align: center;
   background-color: #fff;
   border-bottom: 2px #1a1a1a;
-  overflow: hidden;
 }
 @media (min-width: 48em) {
   .menu-principal-mobile {
@@ -632,7 +631,6 @@ input:focus {
   max-width: 90%;
   text-align: center;
   line-height: 120%;
-  margin-top: 10px;
   margin: 10px auto 0;
 }
 .texto-home > p:first-child {
@@ -697,12 +695,6 @@ input:focus {
     width: 700px;
     max-width: 700px;
     margin: 0 auto;
-    padding: 60px;
-  }
-}
-@media (min-width: 75em) {
-  .diferenciais-pousada > .diferenciais {
-    padding: 80px;
   }
 }
 .diferenciais-pousada > .diferenciais > h1 {
@@ -1052,6 +1044,254 @@ input:focus {
 }
 @media (min-width: 62em) {
   .suites-home > ul li a > .icone {
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 16px;
+  }
+}
+.facilidades-pousada {
+  background-color: #1a1a1a;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.facilidades-pousada:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 48em) {
+  .facilidades-pousada {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.facilidades-pousada > h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 10px;
+  padding-bottom: 10px;
+}
+@media (min-width: 30em) {
+  .facilidades-pousada > h1 {
+    font-size: 20px;
+    margin: 0 20px 20px 20px;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 48em) {
+  .facilidades-pousada > h1 {
+    font-size: 22px;
+    border-style: none;
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 62em) {
+  .facilidades-pousada > h1 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 75em) {
+  .facilidades-pousada > h1 {
+    font-size: 26px;
+  }
+}
+.facilidades-pousada > .facilidades {
+  width: 90%;
+  max-width: 90%;
+  margin: 10px auto;
+}
+.facilidades-pousada > .facilidades:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 30em) {
+  .facilidades-pousada > .facilidades {
+    width: 450px;
+    max-width: 450px;
+  }
+}
+@media (min-width: 48em) {
+  .facilidades-pousada > .facilidades {
+    width: 500px;
+    max-width: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+  }
+}
+.facilidades-pousada > .facilidades > ul {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  padding: 5px;
+}
+@media (min-width: 30em) {
+  .facilidades-pousada > .facilidades > ul {
+    padding: 10px;
+  }
+}
+@media (min-width: 48em) {
+  .facilidades-pousada > .facilidades > ul {
+    padding: 20px;
+  }
+}
+.facilidades-pousada > .facilidades > ul > li > a {
+  display: block;
+  padding: 5px 0;
+}
+.facilidades-pousada > .facilidades > ul > li > a > .icone.seguranca::before {
+  content: "\e90e";
+}
+.facilidades-pousada > .facilidades > ul > li > a > .icone.seguranca::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+.facilidades-pousada > .facilidades > ul > li > a > .icone.agua::before {
+  content: "\e913";
+}
+.facilidades-pousada > .facilidades > ul > li > a > .icone.agua::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+.facilidades-pousada > .facilidades > ul > li > a > .icone.tv::before {
+  content: "\e910";
+}
+.facilidades-pousada > .facilidades > ul > li > a > .icone.tv::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+.facilidades-pousada > .facilidades > ul > li > a > .icone.seducao::before {
+  content: "\e907";
+}
+.facilidades-pousada > .facilidades > ul > li > a > .icone.seducao::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+.facilidades-pousada > .facilidades > ul > li > a > .icone.permanencia::before {
+  content: "\e90d";
+}
+.facilidades-pousada > .facilidades > ul > li > a > .icone.permanencia::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+.facilidades-pousada > .facilidades > ul > li > a > .icone.wifi::before {
+  content: "\e916";
+}
+.facilidades-pousada > .facilidades > ul > li > a > .icone.wifi::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+.facilidades-pousada > .facilidades > ul > li > a > .icone.ar::before {
+  content: "\e900";
+}
+.facilidades-pousada > .facilidades > ul > li > a > .icone.ar::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+.facilidades-pousada > .facilidades > ul > li > a > .texto {
+  font-size: 10px;
+}
+@media (min-width: 30em) {
+  .facilidades-pousada > .facilidades > ul > li > a > .texto {
+    font-size: 14px;
+  }
+}
+@media (min-width: 48em) {
+  .facilidades-pousada > .facilidades > ul > li > a > .texto {
+    font-size: 16px;
+  }
+}
+.facilidades-pousada > .facilidades > ul > li > a > .mais {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  float: right;
+}
+@media (min-width: 62em) {
+  .facilidades-pousada > .facilidades > ul > li > a > .mais {
     width: 22px;
     height: 22px;
     line-height: 22px;

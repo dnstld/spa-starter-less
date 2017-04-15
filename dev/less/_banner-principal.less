@@ -1,6 +1,14 @@
 .banner-principal {
 	.box-sizing();
-	background-image: url(../../assets/images/loader.gif);
 	background-repeat: no-repeat;
 	background-position: center;
+
+	&.home {
+		background-image: url(../../assets/images/loader.gif);
+	}
+	&.sobre {
+		background-image: url(../../assets/images/foto-interior-pousada-voce-que-sabe.jpg);
+		background-size: cover;
+		background-attachment: fixed;
+	}
 }

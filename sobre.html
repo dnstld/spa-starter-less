@@ -72,11 +72,115 @@
 
 		<span class="fake"></span>
 
-		<footer class="rodape-principal">
+		<section id="banner" class="banner-principal sobre"></section>
+
+		<header id="header" class="header-principal">
+			<span class="seta"></span>
+			<h1>
+				SOBRE NÓS
+			</h1>
+		</header>
+
+		<article class="texto-sobre">
+			<p>O estabelecimento nasceu no ano de 2000, seu nome na época era Auto Moto Lanches Amore Mio, o termo “Amore Mio” era muito utilizado na novela Terra Nostra que estava sendo exibida na época pela emissora Rede Globo.</p>
+			<p>Alguns anos depois o Auto Moto Lanches Amore Mio passou por uma transformação e no ano de 2008 nascia um novo conceito, com excelentes acomodações e diferente de todos os outros Auto Lanche da cidade.</p>
+			<p>Nascia a <strong>Pousada Você que Sabe</strong>, com um nome autêntico, criativo e engraçado. O nome “Você que Sabe” surgiu ao notar que as respostas eram sempre as mesmas quando as pessoas perguntavam: Aonde vamos? Você que Sabe! Foi nesse momento que surgiu a ideia de dar o nome da pousada de Você que Sabe.</p>
+			<p><strong>Venha hospedar-se conosco, será um prazer recebe-los.</strong></p>
+		</article>
+
+		<section class="suites-home">
+			<h1>Conheça nossas suítes</h1>
+
+			<ul>
+				<li>
+					<a href="prata.html">
+						<span class="imagem prata"></span>
+						<span class="preco">280,00</span>
+						<span class="titulo">Prata</span>
+						<span class="icone">+</span>
+					</a>
+				</li>
+				<li>
+					<a href="rubi-duplex.html">
+						<span class="imagem rubi-duplex"></span>
+						<span class="preco">180,00</span>
+						<span class="titulo">Rubi duplex</span>
+						<span class="icone">+</span>
+					</a>
+				</li>
+				<li>
+					<a href="rubi.html">
+						<span class="imagem rubi"></span>
+						<span class="preco">165,00</span>
+						<span class="titulo">Rubi</span>
+						<span class="icone">+</span>
+					</a>
+				</li>
+				<li>
+					<a href="esmeralda.html">
+						<span class="imagem esmeralda"></span>
+						<span class="preco">135,00</span>
+						<span class="titulo">Esmeralda</span>
+						<span class="icone">+</span>
+					</a>
+				</li>
+				<li>
+					<a href="perola.html">
+						<span class="imagem perola"></span>
+						<span class="preco">110,00</span>
+						<span class="titulo">Perola</span>
+						<span class="icone">+</span>
+					</a>
+				</li>
+				<li>
+					<a href="diamante.html">
+						<span class="imagem diamante"></span>
+						<span class="preco">90,00</span>
+						<span class="titulo">Diamante</span>
+						<span class="icone">+</span>
+					</a>
+				</li>
+				<li>
+					<a href="ouro.html">
+						<span class="imagem ouro"></span>
+						<span class="preco">80,00</span>
+						<span class="titulo">Ouro</span>
+						<span class="icone">+</span>
+					</a>
+				</li>
+				<li>
+					<a href="brilhante.html">
+						<span class="imagem brilhante"></span>
+						<span class="preco">55,00</span>
+						<span class="titulo">Brilhante</span>
+						<span class="icone">+</span>
+					</a>
+				</li>
+			</ul>
+		</section>
+
+		<footer class="rodape-principal sobre">
 			<section>
 				<p>Copyright &copy; 2017 Pousada Você Que Sabe  &bull; Todos os direitos reservados</p>
 				<p>Desenvolvido por <a href="http://chefdesign.com.br/" target="_blank">ChefDesign</a></p>
 			</section>
 		</footer>
+
+		<!-- initial script -->
+		<script>
+			function estruturaInicial() {
+				var banner = document.getElementById('banner');
+				var alturaTela = document.body.offsetHeight;
+				var header = document.getElementById('header').offsetHeight;
+
+				banner.style.height = ((alturaTela - header) - 120)  + 'px'; // 100 === menu.style.height
+			}
+			window.onload = estruturaInicial;
+
+			// atualiza a estrutura
+			window.addEventListener('resize', function() {
+				estruturaInicial();
+			});
+		</script>
 	</body>
 </html>

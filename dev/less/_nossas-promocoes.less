@@ -1,0 +1,106 @@
+.nossas-promocoes {
+	background-image: url('./../../assets/images/suites/brilhante/suite-brilhante-pousada-voce-que-sabe-01.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: scroll;
+	background-size: cover;
+	padding: 30px;
+
+	.mobile({
+		padding: 50px;
+	});
+	.tablet({
+		padding: 100px;
+	});
+	.desktop({
+		padding: 150px;
+		background-attachment: fixed;
+	});
+
+	> .promocoes {
+		max-width: 300px;
+		background-color: @cor-logo;
+		padding: 10px;
+		border-radius: 10px;
+		margin: 0 auto;
+
+		.mobile({
+			padding: 20px;
+		});
+		.desktop({
+			padding: 30px;
+		});
+
+		> h1 {
+			font-size: 18px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			text-align: center;
+			border-bottom: 1px solid rgba(255, 255, 255, .2);
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+
+			.mobile({
+				font-size: 20px;
+				margin-bottom: 20px;
+				padding-bottom: 20px;
+			});
+			.tablet({
+				font-size: 22px;
+			});
+			.desktop({
+				font-size: 24px;
+				margin-bottom: 30px;
+				padding-bottom: 30px;
+			});
+			.huge({
+				font-size: 26px;
+			});
+		}
+		> form {
+			margin-top: 10px;
+
+			.mobile({
+				margin-top: 20px;
+			});
+			.desktop({
+				margin-top: 30px;
+			});
+
+			> label {
+				display: block;
+				font-size: 12px;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				margin-bottom: 5px;
+			}
+			> input {
+				.box-sizing;
+				display: block;
+				width: 100%;
+				height: 40px;
+				border-radius: 5px;
+				border-style: none;
+				padding: 0 10px;
+				margin-bottom: 10px;
+
+				.mobile({
+					margin-bottom: 20px;
+				});
+				.desktop({
+					margin-bottom: 30px;
+				});
+			}
+			> button {
+				display: block;
+				background-color: transparent;
+				background-color: rgba(0, 0, 0, 0);
+				border-style: none;
+				text-transform: uppercase;
+				color: #fff;
+				margin: 0 auto;
+				font-size: 18px;
+			}
+		}
+	}
+}

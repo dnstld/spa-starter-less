@@ -1690,6 +1690,8 @@ input:focus {
   box-sizing: border-box;
   padding: 10px;
   text-align: center;
+  background-color: #fff;
+  color: #1a1a1a;
 }
 .rodape-principal > section > p {
   font-size: 8px;

@@ -1443,6 +1443,249 @@ input:focus {
   margin: 0 auto;
   font-size: 18px;
 }
+.nossos-contatos {
+  background-color: #1a1a1a;
+  padding: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.nossos-contatos:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 30em) {
+  .nossos-contatos {
+    padding: 20px;
+  }
+}
+@media (min-width: 62em) {
+  .nossos-contatos {
+    padding: 30px;
+  }
+}
+.nossos-contatos > h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+@media (min-width: 30em) {
+  .nossos-contatos > h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 48em) {
+  .nossos-contatos > h1 {
+    font-size: 22px;
+  }
+}
+@media (min-width: 62em) {
+  .nossos-contatos > h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 75em) {
+  .nossos-contatos > h1 {
+    font-size: 26px;
+  }
+}
+.nossos-contatos > .contatos {
+  position: relative;
+}
+.nossos-contatos > .contatos > .blocos {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.nossos-contatos > .contatos > .blocos:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 30em) {
+  .nossos-contatos > .contatos > .blocos {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 48em) {
+  .nossos-contatos > .contatos > .blocos {
+    width: 25%;
+    float: left;
+    padding: 10px;
+  }
+}
+@media (min-width: 62em) {
+  .nossos-contatos > .contatos > .blocos {
+    width: 20%;
+    margin-bottom: 0;
+  }
+}
+.nossos-contatos > .contatos > .blocos.logo {
+  display: none;
+}
+@media (min-width: 62em) {
+  .nossos-contatos > .contatos > .blocos.logo {
+    display: block;
+  }
+  .nossos-contatos > .contatos > .blocos.logo > img {
+    width: 90px;
+  }
+}
+.nossos-contatos > .contatos > .blocos.endereco > p {
+  line-height: 120%;
+}
+.nossos-contatos > .contatos > .blocos.gps {
+  width: 90px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.nossos-contatos > .contatos > .blocos.social {
+  margin-bottom: 0;
+}
+.nossos-contatos > .contatos > .blocos > h3 {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.nossos-contatos > .contatos > .blocos > h3 > span {
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
+.nossos-contatos > .contatos > .blocos > h3 > span.endereco::before {
+  content: "\e90a";
+}
+.nossos-contatos > .contatos > .blocos > h3 > span.endereco::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+.nossos-contatos > .contatos > .blocos > h3 > span.informacoes::before {
+  content: "\e915";
+}
+.nossos-contatos > .contatos > .blocos > h3 > span.informacoes::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+.nossos-contatos > .contatos > .blocos > h3 > span.social::before {
+  content: "\e904";
+}
+.nossos-contatos > .contatos > .blocos > h3 > span.social::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+.nossos-contatos > .contatos > .blocos > ul > li a {
+  display: block;
+  float: left;
+}
+.nossos-contatos > .contatos > .blocos > ul > li a.facebook::before {
+  content: "\e906";
+}
+.nossos-contatos > .contatos > .blocos > ul > li a.facebook::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+.nossos-contatos > .contatos > .blocos > ul > li a.gmap,
+.nossos-contatos > .contatos > .blocos > ul > li a.waze {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.nossos-contatos > .contatos > .blocos > ul > li a.gmap {
+  background-color: red;
+}
+.nossos-contatos > .contatos > .blocos > ul > li a.gmap::before {
+  content: "\e90a";
+}
+.nossos-contatos > .contatos > .blocos > ul > li a.gmap::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+.nossos-contatos > .contatos > .blocos > ul > li a.waze {
+  background-color: #93c4d3;
+  margin-left: 10px;
+}
+.nossos-contatos > .contatos > .blocos > ul > li a.waze::before {
+  content: "\e914";
+}
+.nossos-contatos > .contatos > .blocos > ul > li a.waze::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+@media (min-width: 62em) {
+  .nossos-contatos > .contatos > .blocos > ul > li a.waze {
+    display: none;
+  }
+}
 .rodape-principal {
   box-sizing: border-box;
   padding: 10px;

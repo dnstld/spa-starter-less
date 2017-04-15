@@ -1,0 +1,143 @@
+.nossos-contatos {
+	.clearfix;
+	background-color: @cor-principal;
+	padding: 10px;
+	max-width: 1000px;
+	margin: 0 auto;
+
+	.mobile({
+		padding: 20px;
+	});
+	.desktop({
+		padding: 30px;
+	});
+
+	> h1 {
+		font-size: 18px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		text-align: center;
+		border-bottom: 1px solid rgba(255, 255, 255, .2);
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+
+		.mobile({
+			font-size: 20px;
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+		});
+		.tablet({
+			font-size: 22px;
+		});
+		.desktop({
+			font-size: 24px;
+			margin-bottom: 30px;
+		});
+		.huge({
+			font-size: 26px;
+		});
+	}
+	> .contatos {
+		position: relative;
+
+		> .blocos {
+			.clearfix;
+			width: 100%;
+			margin-bottom: 20px;
+			
+			.mobile({
+				margin-bottom: 20px;
+			});
+			.tablet({
+				width: 25%;
+				float: left;
+				padding: 10px;
+			});
+			.desktop({
+				width: 20%;
+				margin-bottom: 0;
+			});
+			
+			&.logo {
+				display: none;
+
+				.desktop({
+					display: block;
+
+					> img {
+						width: 90px;
+					}
+				});
+			}
+			&.endereco {
+				> p {
+					line-height: 120%;
+				}
+			}
+			&.gps {
+				width: 90px;
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			&.social {
+				margin-bottom: 0;
+			}
+			> h3 {
+				display: block;
+				font-size: 10px;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				margin-bottom: 10px;
+
+				> span {
+					display: block;
+					float: left;
+					margin-right: 5px;
+
+					&.endereco {
+						.icon(@icon-map, 12px);
+					}
+					&.informacoes {
+						.icon(@icon-whatsapp, 12px);
+					}
+					&.social {
+						.icon(@icon-compartilhar, 12px);
+					}
+				}
+			}
+			> ul {
+				> li {
+					a {
+						display: block;
+						float: left;
+
+						&.facebook {
+							.icon(@icon-facebook, 30px);
+						}
+						&.gmap,
+						&.waze {
+							width: 40px;
+							height: 40px;
+							line-height: 40px;
+							text-align: center;
+						}
+						&.gmap {
+							.icon(@icon-map, 20px);
+							background-color: @cor-logo;
+						}
+						&.waze {
+							.icon(@icon-waze, 20px);
+							background-color: #93c4d3;
+							margin-left: 10px;
+
+							.desktop({
+								display: none;
+							});
+						}
+					}
+				}
+			}
+		}
+	}
+}

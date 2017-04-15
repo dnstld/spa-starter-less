@@ -55,7 +55,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="localizacao.html">
+						<a href="localizacao.html" class="ativo">
 							<span class="icone localizacao ativo"></span>
 							Localização
 						</a>
@@ -71,12 +71,99 @@
 
 		<span class="fake"></span>
 
+		<section id="banner" class="banner-principal localizacao"></section>
+
+		<header id="header" class="header-principal localizacao">
+			<span class="seta"></span>
+			<h1>
+				CONTATOS
+			</h1>
+		</header>
+
+		<section class="nossos-contatos localizacao">
+			<h1>Contatos</h1>
+
+			<section class="contatos">
+				<section class="blocos logo">
+					<img src="assets/images/logo-alternativo-pousada-voce-que-sabe.png" alt="Imagem do logo">
+				</section>
+
+				<section class="blocos endereco">
+					<h3><span class="endereco"></span> Endereço</h3>
+					<p>Rua Aparecida, 1410</p>
+					<p>Jardim Santa Rosália</p>
+					<p>Sorocaba - SP</p>
+				</section>
+
+				<section class="blocos informacoes">
+					<h3><span class="informacoes"></span> Informações</h3>
+					<p>(11) 99105-5975</p>
+				</section>
+
+				<aside class="blocos social">
+					<h3><span class="social"></span> Redes sociais</h3>
+
+					<ul>
+						<li><a href="https://facebook.com" target="_blank" class="facebook"></a></li>
+					</ul>
+				</aside>
+
+				<aside class="blocos gps">
+					<ul>
+						<li><a href="https://facebook.com" target="_blank" class="gmap"></a></li>
+						<li><a href="https://facebook.com" target="_blank" class="waze"></a></li>
+					</ul>
+				</aside>
+			</section>
+		</section>
+
+		<section class="menu-rodape">
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="suites.html">Suítes</a>
+					</li>
+					<li>
+						<a href="promocoes.html">Promoções</a>
+					</li>
+					<li>
+						<a href="sobre.html">Sobre nós</a>
+					</li>
+					<li>
+						<a href="localizacao.html" class="ativo">Localização</a>
+					</li>
+				</ul>
+			</nav>
+		</section>
+
 		<footer class="rodape-principal">
 			<section>
 				<p>Copyright &copy; 2017 Pousada Você Que Sabe  &bull; Todos os direitos reservados</p>
 				<p>Desenvolvido por <a href="http://chefdesign.com.br/" target="_blank">ChefDesign</a></p>
 			</section>
 		</footer>
+
+		<!-- initial script -->
+		<script>
+			function estruturaInicial() {
+				var banner = document.getElementById('banner');
+				var alturaTela = document.body.offsetHeight;
+				var header = document.getElementById('header').offsetHeight;
+
+				banner.style.height = ((alturaTela - header) - 120)  + 'px'; // 100 === menu.style.height
+			}
+			window.onload = estruturaInicial;
+
+			// atualiza a estrutura
+			window.addEventListener('resize', function() {
+				estruturaInicial();
+			});
+		</script>
+
+		<!-- scripts -->
 		<script src="dist/js/main.min.js"></script>
 	</body>
 </html>

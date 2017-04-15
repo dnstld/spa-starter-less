@@ -372,11 +372,17 @@ input:focus {
   display: table;
   clear: both;
 }
+.menu-principal nav > ul li a.ativo {
+  color: red;
+}
 @media (min-width: 48em) {
   .menu-principal nav > ul li a {
     font-size: 14px;
     color: #1a1a1a;
     padding: 0 10px;
+  }
+  .menu-principal nav > ul li a.ativo {
+    color: #1a1a1a;
   }
 }
 @media (min-width: 62em) {
@@ -751,6 +757,7 @@ input:focus {
   }
 }
 .diferenciais-pousada > .diferenciais {
+  box-sizing: border-box;
   border-radius: 5px;
   padding: 20px;
   background-color: #1a1a1a;

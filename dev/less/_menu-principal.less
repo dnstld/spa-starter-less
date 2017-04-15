@@ -142,10 +142,17 @@
 					text-decoration: none;
 					text-align: center;
 
+					&.ativo {
+						color: @cor-logo;
+					}
 					.tablet({
 						font-size: 14px;
 						color: @cor-principal;
 						padding: 0 10px;
+
+						&.ativo {
+							color: @cor-principal;
+						}
 					});
 					.desktop({
 						font-size: 16px;

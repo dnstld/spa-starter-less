@@ -1516,6 +1516,16 @@ input:focus {
     padding: 30px;
   }
 }
+.nossos-contatos.localizacao > h1 {
+  display: none;
+}
+.nossos-contatos.localizacao > .contatos {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 20px;
+}
+.nossos-contatos.localizacao > .contatos > .blocos.gps {
+  top: 20px;
+}
 .nossos-contatos > h1 {
   font-size: 18px;
   text-transform: uppercase;

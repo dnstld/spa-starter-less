@@ -597,6 +597,14 @@ input:focus {
 .header-principal {
   box-sizing: border-box;
   padding: 10px;
+  margin: 0 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+@media (min-width: 62em) {
+  .header-principal {
+    padding: 20px;
+    margin: 0 20px;
+  }
 }
 .header-principal > .seta {
   display: block;
@@ -640,7 +648,7 @@ input:focus {
     font-size: 24px;
   }
 }
-@media (min-width: 62em) {
+@media (min-width: 75em) {
   .header-principal > h1 {
     font-size: 26px;
   }
@@ -661,7 +669,6 @@ input:focus {
 .texto-home {
   margin: 10px;
   padding: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 @media (min-width: 62em) {
   .texto-home {
@@ -698,7 +705,6 @@ input:focus {
 .texto-sobre {
   margin: 10px;
   padding: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 @media (min-width: 62em) {
   .texto-sobre {
@@ -733,7 +739,7 @@ input:focus {
   }
 }
 .diferenciais-pousada {
-  background-image: url('../../assets/images/suites/brilhante/suite-brilhante-pousada-voce-que-sabe-01.jpg');
+  background-image: url('../../assets/images/suites/Brilhante/Foto-suíte-36-brilhante-perspectiva-04.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -987,8 +993,7 @@ input:focus {
   }
 }
 .suites-home > ul {
-  width: 90%;
-  max-width: 90%;
+  max-width: 1000px;
   margin: 0 auto;
 }
 .suites-home > ul:after {
@@ -1035,29 +1040,29 @@ input:focus {
   bottom: 0;
   left: 0;
 }
-.suites-home > ul li a > .imagem.prata:before {
-  background-image: url("../../assets/images/suites/prata/thumb-suite-prata-pousada-voce-que-sabe.jpg");
+.suites-home > ul li a > .imagem.brilhante:before {
+  background-image: url("../../assets/images/suites/Brilhante/thumb-suite-brilhante-pousada-voce-que-sabe.jpg");
 }
 .suites-home > ul li a > .imagem.rubi-duplex:before {
-  background-image: url("../../assets/images/suites/rubi-duplex/thumb-suite-rubi-duplex-pousada-voce-que-sabe.jpg");
-}
-.suites-home > ul li a > .imagem.esmeralda:before {
-  background-image: url("../../assets/images/suites/esmeralda/thumb-suite-esmeralda-pousada-voce-que-sabe.jpg");
-}
-.suites-home > ul li a > .imagem.ouro:before {
-  background-image: url("../../assets/images/suites/ouro/thumb-suite-ouro-pousada-voce-que-sabe.jpg");
-}
-.suites-home > ul li a > .imagem.brilhante:before {
-  background-image: url("../../assets/images/suites/brilhante/thumb-suite-brilhante-pousada-voce-que-sabe.jpg");
-}
-.suites-home > ul li a > .imagem.diamante:before {
-  background-image: url("../../assets/images/suites/diamante/thumb-suite-diamante-pousada-voce-que-sabe.jpg");
-}
-.suites-home > ul li a > .imagem.perola:before {
-  background-image: url("../../assets/images/suites/perola/thumb-suite-perola-pousada-voce-que-sabe.jpg");
+  background-image: url("../../assets/images/suites/Rubi-Duplex/thumb-suite-rubi-duplex-pousada-voce-que-sabe.jpg");
 }
 .suites-home > ul li a > .imagem.rubi:before {
-  background-image: url("../../assets/images/suites/rubi/thumb-suite-rubi-pousada-voce-que-sabe.jpg");
+  background-image: url("../../assets/images/suites/Rubi/thumb-suite-rubi-pousada-voce-que-sabe.jpg");
+}
+.suites-home > ul li a > .imagem.esmeralda:before {
+  background-image: url("../../assets/images/suites/Esmeralda/thumb-suite-esmeralda-pousada-voce-que-sabe.jpg");
+}
+.suites-home > ul li a > .imagem.perola:before {
+  background-image: url("../../assets/images/suites/Perola/thumb-suite-perola-pousada-voce-que-sabe.jpg");
+}
+.suites-home > ul li a > .imagem.diamante:before {
+  background-image: url("../../assets/images/suites/Diamante/thumb-suite-diamante-pousada-voce-que-sabe.jpg");
+}
+.suites-home > ul li a > .imagem.ouro:before {
+  background-image: url("../../assets/images/suites/Ouro/thumb-suite-ouro-pousada-voce-que-sabe.jpg");
+}
+.suites-home > ul li a > .imagem.prata:before {
+  background-image: url("../../assets/images/suites/Prata/thumb-suite-prata-pousada-voce-que-sabe.jpg");
 }
 .suites-home > ul li a > .preco {
   display: block;
@@ -1372,7 +1377,7 @@ input:focus {
   }
 }
 .nossas-promocoes {
-  background-image: url('../../assets/images/suites/brilhante/suite-brilhante-pousada-voce-que-sabe-01.jpg');
+  background-image: url('../../assets/images/suites/Brilhante/Foto-suíte-36-brilhante-perspectiva-02.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -1498,8 +1503,6 @@ input:focus {
 .nossos-contatos {
   background-color: #1a1a1a;
   padding: 10px;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 .nossos-contatos:after {
   content: "";
@@ -1520,8 +1523,9 @@ input:focus {
   display: none;
 }
 .nossos-contatos.localizacao > .contatos {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding-top: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .nossos-contatos.localizacao > .contatos > .blocos.gps {
   top: 20px;

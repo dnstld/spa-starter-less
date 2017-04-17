@@ -1,6 +1,13 @@
 .header-principal {
 	.box-sizing();
 	padding: 10px;
+	margin: 0 10px;
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
+
+	.desktop({
+		padding: 20px;
+		margin: 0 20px;
+	});
 
 	> .seta {
 		.icon(@icon-arrow, 28px);
@@ -22,7 +29,7 @@
 		.desktop({
 			font-size: 24px;
 		});
-		.desktop({
+		.huge({
 			font-size: 26px;
 		});
 	}

@@ -664,7 +664,12 @@ input:focus {
 .banner-principal.sobre {
   background-image: url(../../assets/images/foto-interior-pousada-voce-que-sabe.jpg);
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
+}
+@media (min-width: 62em) {
+  .banner-principal.sobre {
+    background-attachment: fixed;
+  }
 }
 .texto-home {
   margin: 10px;

@@ -8,6 +8,7 @@
   "license": "ISC",
   "homepage": "https://github.com/rogersmuk/pousadavocequesabe",
   "devDependencies": {
-    "eric-mayer-reset-less-sass": "https://github.com/dnstld/eric-mayer-reset-less-sass.git"
+    "eric-mayer-reset-less-sass": "https://github.com/dnstld/eric-mayer-reset-less-sass.git",
+    "vegas": "^2.4.0"
   }
 }

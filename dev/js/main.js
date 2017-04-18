@@ -23,9 +23,10 @@ var Pousada = {
    * @return {Void}
    */
   init: function() {
-    "use strict";
+    'use strict';
 
     Pousada.toggleMenu();
+    Pousada.slideshow();
   },
    /**
    * toggleMenu
@@ -35,7 +36,7 @@ var Pousada = {
    * @return {Void}
    */
   toggleMenu: function() {
-    "use strict";
+    'use strict';
 
     var hamburguer = $('#hamburguer'),
         menu = $('.menu-principal'),
@@ -47,11 +48,23 @@ var Pousada = {
       menuMobile.toggleClass('toggleMenuMobile');
       hamburguer.toggleClass('toggleMenuMobile');
     });
+  },
+  slideshow: function() {
+    'use strict';
+
+    $('#slideshow').vegas({
+      slides: [
+        { src: './assets/images/suites/Brilhante/Foto-suite-36-brilhante-perspectiva-01.jpg' },
+        { src: './assets/images/suites/Brilhante/Foto-suite-36-brilhante-perspectiva-02.jpg' }
+      ],
+      timer: true,
+      overlay: './assets/images/overlay.png'
+    });
   }
 }
 
-$(document).on("ready", function() {
-  "use strict";
+$(document).on('ready', function() {
+  'use strict';
 
   Pousada.init();
 });

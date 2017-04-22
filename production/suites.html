@@ -71,9 +71,16 @@
 
 		<span class="fake"></span>
 
-		<section class="suites-home">
-			<h1>Conheça nossas suítes</h1>
+		<section id="slideshow-suites" class="banner-principal home"></section>
 
+		<header id="header" class="header-principal">
+			<span class="seta"></span>
+			<h1>
+				CONHEÇA NOSSAS SUÍTES
+			</h1>
+		</header>
+
+		<section class="suites-home">
 			<ul>
 				<li>
 					<a href="brilhante.html">
@@ -170,6 +177,23 @@
 				<p>Desenvolvido por <a href="http://chefdesign.com.br/" target="_blank">ChefDesign</a></p>
 			</section>
 		</footer>
+
+		<!-- initial script -->
+		<script>
+			function estruturaInicial() {
+				var banner = document.getElementById('slideshow-suites');
+				var alturaTela = document.body.offsetHeight;
+				var header = document.getElementById('header').offsetHeight;
+
+				banner.style.height = ((alturaTela - header) - 120)  + 'px'; // 100 === menu.style.height
+			}
+			window.onload = estruturaInicial;
+
+			// atualiza a estrutura
+			window.addEventListener('resize', function() {
+				estruturaInicial();
+			});
+		</script>
 
 		<!-- scripts -->
 		<script src="dist/js/main.min.js"></script>

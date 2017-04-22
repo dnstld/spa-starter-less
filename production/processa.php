@@ -2,8 +2,8 @@
 	$nome = $_POST['nome'];
 	$email = $_POST['email'];
 	
-	$para = "contato@denistoledo.com.br";
-	$assunto = "Promoções";
+	$para = "rogersmuk@gmail.com";
+	$assunto = "Cadastro promoções";
 	$msg = "
 		<b>Nome:</b> $nome<br />
 		<b>E-mail:</b> $email<br />

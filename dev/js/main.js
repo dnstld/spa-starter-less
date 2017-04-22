@@ -149,8 +149,8 @@ var Pousada = {
       unhighlight: function(element, errorClass, validClass) {
         $(element).removeClass(errorClass).addClass(validClass);
       },
-      submitHandler: function(formulario) {
-        var dados = formulario.serialize();
+      submitHandler: function(form) {
+        var dados = $(form).serialize();
 
         $.ajax({
           type: 'POST',
@@ -159,14 +159,14 @@ var Pousada = {
           dataType: 'text',
           cache: false,
           beforeSend: function() {
-            botaoEnviar.text('Enviando...')
+            botaoEnviar.text('Enviando...');
           },
           complete: function() {
-            botaoEnviar.text('Processando...')
+            botaoEnviar.text('Cadastrando...');
           },
           success: function() {
             setTimeout(function() {
-              botaoEnviar.addClass('sucesso').text('Obrigado');
+              botaoEnviar.addClass('sucesso').text('Cadastrado com sucesso!');
               $('#nome, #email').val('');
 
               setTimeout(function() {

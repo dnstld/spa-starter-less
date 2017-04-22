@@ -2256,6 +2256,7 @@ input:focus {
   color: #fff;
   margin: 0 auto;
   font-size: 18px;
+  cursor: pointer;
 }
 .nossos-contatos {
   background-color: #1a1a1a;

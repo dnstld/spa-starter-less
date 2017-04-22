@@ -15,6 +15,7 @@ var gulp = require("gulp"),
 		jquery: "node_modules/jquery/dist/jquery.js",
 		slideshow: "vendor/vegas/dist/vegas.js",
 		modal: "vendor/jquery-colorbox/jquery.colorbox.js",
+		validation: "vendor/jquery-validation/dist/jquery.validate.js",
 		main: "dev/js/main.js"
 	};
 
@@ -64,6 +65,7 @@ gulp.task('js', function() {
 			scripts.jquery,
 			scripts.slideshow,
 			scripts.modal,
+			scripts.validation,
 			scripts.main
 		])
 		.pipe(concatJS('main.js'))

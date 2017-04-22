@@ -67,14 +67,14 @@ var Pousada = {
       timer: true
     });
 
-    $('#slideshow-suites').vegas({
+    $('#slideshow-sobre').vegas({
       slides: [
         { src: './assets/images/Empresa-Interior-e-Lavanderia/Foto-faxada-perspectiva.jpg' },
-        { src: './assets/images/suites/Perola/Suíte-20/foto-suíte-20-perola-vintage-perspectiva-01.jpg' },
-        { src: './assets/images/suites/Brilhante/Foto-suite-36-brilhante-perspectiva-02.jpg' },
-        { src: './assets/images/suites/Diamante/Suíte-27/foto-suite-27-diamante-perspectiva-01.JPG' }
-      ],
-      timer: false
+        { src: './assets/images/Empresa-Interior-e-Lavanderia/Foto-interior-perspectiva.jpg' },
+        { src: './assets/images/Empresa-Interior-e-Lavanderia/Foto-lavanderia-perspectiva-02.jpg' },
+        { src: './assets/images/Empresa-Interior-e-Lavanderia/Foto-lavanderia-perspectiva-03.jpg' },
+        { src: './assets/images/Empresa-Interior-e-Lavanderia/Foto-lavanderia-perspectiva-04.jpg' }
+      ]
     });
   }
 }

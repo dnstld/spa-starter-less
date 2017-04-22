@@ -27,8 +27,9 @@ var Pousada = {
 
     Pousada.toggleMenu();
     Pousada.slideshow();
+    Pousada.colorbox();
   },
-   /**
+  /**
    * toggleMenu
    * @access public
    * @desc mostra/esconde o menu em mobile
@@ -49,6 +50,13 @@ var Pousada = {
       hamburguer.toggleClass('toggleMenuMobile');
     });
   },
+  /**
+   * slideshow
+   * @access public
+   * @desc slideshow
+   *
+   * @return {Void}
+   */
   slideshow: function() {
     'use strict';
 
@@ -75,6 +83,23 @@ var Pousada = {
         { src: './assets/images/Empresa-Interior-e-Lavanderia/Foto-lavanderia-perspectiva-03.jpg' },
         { src: './assets/images/Empresa-Interior-e-Lavanderia/Foto-lavanderia-perspectiva-04.jpg' }
       ]
+    });
+  },
+  /**
+   * colorbox
+   * @access public
+   * @desc modal
+   *
+   * @return {Void}
+   */
+  colorbox: function() {
+    'use strict';
+
+    var seg = $('#segurancaInfo');
+
+    $(".colorbox").colorbox({
+      inline: true,
+      width: '80%'
     });
   }
 }

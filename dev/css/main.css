@@ -3,6 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import "../../vendor/jquery-colorbox/example3/colorbox.css";
 html,
 body,
 div,
@@ -716,8 +717,8 @@ input:focus {
 }
 @font-face {
   font-family: 'pousada-icons';
-  src: url('../../assets/icons/pousada.eot?5fvy3s');
-  src: url('../../assets/icons/pousada.eot?5fvy3s#iefix') format('embedded-opentype'), url('../../assets/icons/pousada.ttf?5fvy3s') format('truetype'), url('../../assets/icons/pousada.woff?5fvy3s') format('woff'), url('../../assets/icons/pousada.svg?5fvy3s#remoto-icons') format('svg');
+  src: url('../../assets/icons/pousada.eot?rhbho2');
+  src: url('../../assets/icons/pousada.eot?rhbho2#iefix') format('embedded-opentype'), url('../../assets/icons/pousada.ttf?rhbho2') format('truetype'), url('../../assets/icons/pousada.woff?rhbho2') format('woff'), url('../../assets/icons/pousada.svg?rhbho2#remoto-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1477,7 +1478,7 @@ input:focus {
   vertical-align: middle;
 }
 .diferenciais-pousada > .diferenciais > ul li > .icone.oriental::before {
-  content: "\e90c";
+  content: "\e91a";
 }
 .diferenciais-pousada > .diferenciais > ul li > .icone.oriental::before {
   font-family: 'pousada-icons' !important;
@@ -1773,6 +1774,23 @@ input:focus {
 .facilidades-pousada > .facilidades > ul > li > a {
   display: block;
   padding: 5px 0;
+}
+.facilidades-pousada > .facilidades > ul > li > a > .icone.higiene::before {
+  content: "\e90c";
+}
+.facilidades-pousada > .facilidades > ul > li > a > .icone.higiene::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
 }
 .facilidades-pousada > .facilidades > ul > li > a > .icone.seguranca::before {
   content: "\e90e";
@@ -2327,4 +2345,18 @@ input:focus {
 .rodape-principal > section > p > a {
   color: red;
   text-decoration: none;
+}
+.modalFacilidades {
+  display: none;
+}
+#higiene,
+#seguranca,
+#permanencia,
+#agua,
+#wifi,
+#tv,
+#ar,
+#seducao {
+  padding: 20px;
+  color: #1a1a1a;
 }

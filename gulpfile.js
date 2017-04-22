@@ -14,6 +14,7 @@ var gulp = require("gulp"),
 	scripts = {
 		jquery: "node_modules/jquery/dist/jquery.js",
 		slideshow: "vendor/vegas/dist/vegas.js",
+		modal: "vendor/jquery-colorbox/jquery.colorbox.js",
 		main: "dev/js/main.js"
 	};
 
@@ -62,6 +63,7 @@ gulp.task('js', function() {
 	return gulp.src([
 			scripts.jquery,
 			scripts.slideshow,
+			scripts.modal,
 			scripts.main
 		])
 		.pipe(concatJS('main.js'))

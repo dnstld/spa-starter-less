@@ -84,12 +84,23 @@
 				padding: 0 10px;
 				margin-bottom: 10px;
 
+				&.error {
+					margin-bottom: 0;
+					background-color: #ffcaca;
+				}
+
 				.mobile({
 					margin-bottom: 20px;
 				});
 				.desktop({
 					margin-bottom: 30px;
 				});
+			}
+			> span.error {
+				display: block;
+				font-size: 10px;
+				margin-bottom: 10px;
+				margin-top: 5px;
 			}
 			> button {
 				display: block;

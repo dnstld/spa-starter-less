@@ -76,12 +76,13 @@
 			<section class="promocoes">
 				<h1>Promoções</h1>
 				<span>Informe o seu e-mail e participe da promoção que sorteia todo o mês a uma permanência de 12 horas grátis em uma suíte diferenciada para você ter momentos especiais.</span>
-				<form action="">
+				
+				<form method="POST" id="formulario">
 					<label for="nome">Nome</label>
-					<input type="text" id="#nome" placeholder="Digite seu nome">
+					<input type="text" id="#nome" name="nome" placeholder="Digite seu nome">
 					<label for="email">E-mail</label>
-					<input type="email" id="#email" placeholder="Digite seu e-mail">
-					<button type="submit" name="enviar" value="foo">Enviar</button>
+					<input type="email" id="#email" name="email" placeholder="Digite seu e-mail">
+					<button type="submit" id="btnPromocoes">Enviar</button>
 				</form>
 			</section>
 		</section>
@@ -95,6 +96,9 @@
 
 		<!-- scripts -->
 		<script src="node_modules/jquery/dist/jquery.js"></script>
+		<script src="vendor/vegas/dist/vegas.js"></script>
+		<script src="vendor/jquery-colorbox/jquery.colorbox.js"></script>
+		<script src="vendor/jquery-validation/dist/jquery.validate.js"></script>
 		<script src="dev/js/main.js"></script>
 	</body>
 </html>

@@ -28,6 +28,7 @@ var Pousada = {
     Pousada.toggleMenu();
     Pousada.slideshow();
     Pousada.colorbox();
+    Pousada.validate();
   },
   /**
    * toggleMenu
@@ -100,6 +101,87 @@ var Pousada = {
     $(".colorbox").colorbox({
       inline: true,
       width: '80%'
+    });
+  },
+  /**
+   * validate
+   * @access public
+   * @desc validacao do formulario em promocoes
+   *
+   * @return {Void}
+   */
+  validate: function() {
+    'use strict';
+
+    var botaoEnviar = $('#btnPromocoes'),
+        formulario = $('#formulario');
+
+    jQuery.validator.setDefaults({
+      errorClass: 'error',
+      errorElement: 'span',
+      validClass: 'valid'
+    });
+
+    formulario.validate({
+      rules: {
+        nome: {
+          required: true,
+          minlength: 3
+        },
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        nome: {
+          required: 'Digite seu nome',
+          minlength: jQuery.validator.format('Mínimo {0} caracteres')
+        },
+        email: {
+          required: 'Digite seu e-mail',
+          email: 'Insira um e-mail válido'
+        }
+      },
+      highlight: function(element, errorClass, validClass) {
+        $(element).addClass(errorClass).removeClass(validClass);
+      },
+      unhighlight: function(element, errorClass, validClass) {
+        $(element).removeClass(errorClass).addClass(validClass);
+      },
+      submitHandler: function(formulario) {
+        var dados = formulario.serialize();
+
+        $.ajax({
+          type: 'POST',
+          url: 'processa.php',
+          data: dados,
+          dataType: 'text',
+          cache: false,
+          beforeSend: function() {
+            botaoEnviar.text('Enviando...')
+          },
+          complete: function() {
+            botaoEnviar.text('Processando...')
+          },
+          success: function() {
+            setTimeout(function() {
+              botaoEnviar.addClass('sucesso').text('Obrigado');
+              $('#nome, #email').val('');
+
+              setTimeout(function() {
+                botaoEnviar.removeClass('sucesso').text('Enviar');
+              }, 1500);
+            }, 1500);
+          },
+          error: function(xhr, ajaxOptions, thrownError) {
+            console.log('Error: ' + xhr.status);
+            console.log(thrownError);
+          }
+        });
+
+        return false;
+      }
     });
   }
 }

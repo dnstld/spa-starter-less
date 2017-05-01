@@ -10,7 +10,6 @@
   "devDependencies": {
     "eric-mayer-reset-less-sass": "https://github.com/dnstld/eric-mayer-reset-less-sass.git",
     "vegas": "^2.4.0",
-    "jquery-colorbox": "https://github.com/jackmoore/colorbox.git#^1.6.4",
     "jquery-validation": "https://github.com/jquery-validation/jquery-validation.git#^1.16.0"
   }
 }

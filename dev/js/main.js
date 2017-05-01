@@ -27,7 +27,6 @@ var Pousada = {
 
     Pousada.toggleMenu();
     Pousada.slideshow();
-    Pousada.colorbox();
     Pousada.validate();
   },
   /**
@@ -73,7 +72,7 @@ var Pousada = {
         { src: './assets/images/suites/Ouro/Suíte-33/Foto-suíte-33-ouro-perspectiva-01.jpg' },
         { src: './assets/images/suites/Prata/foto-suíte-08-prata-perspectiva-01.jpg' }
       ],
-      timer: true
+      animation: 'kenburns'
     });
 
     $('#slideshow-sobre').vegas({
@@ -83,24 +82,8 @@ var Pousada = {
         { src: './assets/images/Empresa-Interior-e-Lavanderia/Foto-lavanderia-perspectiva-02.jpg' },
         { src: './assets/images/Empresa-Interior-e-Lavanderia/Foto-lavanderia-perspectiva-03.jpg' },
         { src: './assets/images/Empresa-Interior-e-Lavanderia/Foto-lavanderia-perspectiva-04.jpg' }
-      ]
-    });
-  },
-  /**
-   * colorbox
-   * @access public
-   * @desc modal
-   *
-   * @return {Void}
-   */
-  colorbox: function() {
-    'use strict';
-
-    var seg = $('#segurancaInfo');
-
-    $(".colorbox").colorbox({
-      inline: true,
-      width: '80%'
+      ],
+      animation: 'kenburns'
     });
   },
   /**

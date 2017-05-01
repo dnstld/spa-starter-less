@@ -9,12 +9,13 @@ var gulp = require("gulp"),
 	deleteLines = require("gulp-delete-lines"),
 	insertLines = require("gulp-insert-lines"),
 	plumber = require("gulp-plumber"),
+	autoprefixer = require('gulp-autoprefixer'),
+	imagemin = require('gulp-imagemin'),
 
 	// js files
 	scripts = {
 		jquery: "node_modules/jquery/dist/jquery.js",
 		slideshow: "vendor/vegas/dist/vegas.js",
-		modal: "vendor/jquery-colorbox/jquery.colorbox.js",
 		validation: "vendor/jquery-validation/dist/jquery.validate.js",
 		main: "dev/js/main.js"
 	};
@@ -53,6 +54,10 @@ gulp.task('default', ['browserSync', 'less'], function() {
  */
 gulp.task('css', function() {
 	return gulp.src('dev/css/main.css')
+		.pipe(autoprefixer({
+				browsers: ['last 2 versions'],
+				cascade: false
+		}))
 		.pipe(minifyCSS())
 		.pipe(rename({
 			suffix: '.min'
@@ -64,7 +69,6 @@ gulp.task('js', function() {
 	return gulp.src([
 			scripts.jquery,
 			scripts.slideshow,
-			scripts.modal,
 			scripts.validation,
 			scripts.main
 		])
@@ -106,4 +110,16 @@ gulp.task('assets', function() {
 		.pipe(gulp.dest('production/assets'))
 });
 
-gulp.task('production', ['css','js', 'html', 'assets']);
+gulp.task('images', function() {
+	return gulp.src('assets/**/*')
+		.pipe(imagemin({
+			interlaced: true,
+			progressive: true,
+			optimizationLevel: 5,
+			svgoPlugins: [{removeViewBox: true}]
+		}))
+		.pipe(plumber())
+		.pipe(gulp.dest('production/assets'))
+});
+
+gulp.task('production', ['css','js', 'html', 'assets', 'images']);

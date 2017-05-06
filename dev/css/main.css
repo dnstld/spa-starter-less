@@ -3152,6 +3152,7 @@ input:focus {
 }
 .suites-pousada ul li > .informacoes {
   padding: 20px;
+  text-align: center;
 }
 @media (min-width: 48em) {
   .suites-pousada ul li > .informacoes {
@@ -3176,7 +3177,6 @@ input:focus {
   padding-bottom: 10px;
   margin-bottom: 10px;
   text-transform: uppercase;
-  text-align: center;
 }
 @media (min-width: 48em) {
   .suites-pousada ul li > .informacoes > .titulo {
@@ -3224,6 +3224,7 @@ input:focus {
 .suites-pousada ul li > .informacoes > .preco {
   display: block;
   margin-bottom: 20px;
+  color: red;
 }
 @media (min-width: 30em) {
   .suites-pousada ul li > .informacoes > .preco {

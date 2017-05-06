@@ -2415,6 +2415,27 @@ input:focus {
   transform: translateX(-50%);
 }
 @media (min-width: 48em) {
+  .suites-pousada ul li > .imagem:before {
+    border-left-width: 20px;
+    border-right-width: 20px;
+    border-bottom-width: 20px;
+  }
+}
+@media (min-width: 62em) {
+  .suites-pousada ul li > .imagem:before {
+    border-left-width: 30px;
+    border-right-width: 30px;
+    border-bottom-width: 30px;
+  }
+}
+@media (min-width: 75em) {
+  .suites-pousada ul li > .imagem:before {
+    border-left-width: 40px;
+    border-right-width: 40px;
+    border-bottom-width: 40px;
+  }
+}
+@media (min-width: 48em) {
   .suites-pousada ul li > .imagem {
     height: 250px;
   }
@@ -2423,6 +2444,11 @@ input:focus {
   .suites-pousada ul li > .imagem {
     height: 350px;
     background-attachment: fixed;
+  }
+}
+@media (min-width: 75em) {
+  .suites-pousada ul li > .imagem {
+    height: 500px;
   }
 }
 .suites-pousada ul li > .imagem.brilhante {
@@ -2464,6 +2490,11 @@ input:focus {
     padding: 60px;
   }
 }
+@media (min-width: 75em) {
+  .suites-pousada ul li > .info {
+    padding: 80px;
+  }
+}
 .suites-pousada ul li > .info > .titulo {
   display: block;
   font-size: 18px;
@@ -2487,6 +2518,8 @@ input:focus {
 @media (min-width: 75em) {
   .suites-pousada ul li > .info > .titulo {
     font-size: 26px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
 }
 .suites-pousada ul li > .info > .descricao {

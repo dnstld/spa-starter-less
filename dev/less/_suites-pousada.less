@@ -28,6 +28,22 @@
           left: 50%;
           bottom: 0;
           transform: translateX(-50%);
+
+          .tablet({
+            border-left-width: 20px;
+            border-right-width: 20px;
+            border-bottom-width: 20px;
+          });
+          .desktop({
+            border-left-width: 30px;
+            border-right-width: 30px;
+            border-bottom-width: 30px;
+          });
+          .huge({
+            border-left-width: 40px;
+            border-right-width: 40px;
+            border-bottom-width: 40px;
+          });
         }
 
         .tablet({
@@ -36,6 +52,9 @@
         .desktop({
           height: 350px;
           background-attachment: fixed;
+        });
+        .huge({
+          height: 500px;
         });
 
         &.brilhante {
@@ -74,6 +93,9 @@
         .desktop({
           padding: 60px;
         });
+        .huge({
+          padding: 80px;
+        });
 
         > .titulo {
           display: block;
@@ -93,6 +115,8 @@
           });
           .huge({
             font-size: 26px;
+            padding-bottom: 40px;
+            margin-bottom: 40px;
           });
         }
         > .descricao {

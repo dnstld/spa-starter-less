@@ -3132,11 +3132,29 @@ input:focus {
 .suites-pousada ul li > .imagem.rubi-duplex {
   background-image: url("../../assets/images/suites/Rubi-Duplex/thumb-landscape-suite-rubi-duplex-pousada-voce-que-sabe.jpg");
 }
+.suites-pousada ul li > .imagem.rubi-duplex-17 {
+  background-image: url("../../assets/images/suites/Rubi-Duplex/Suíte-17/foto-suíte-17-rubi-duplex-perspectiva-01.jpg");
+}
+.suites-pousada ul li > .imagem.rubi-duplex-18 {
+  background-image: url("../../assets/images/suites/Rubi-Duplex/Suíte-18/foto-suíte-18-rubi-duplex-perspectiva-01.jpg");
+}
 .suites-pousada ul li > .imagem.rubi {
   background-image: url("../../assets/images/suites/Rubi/thumb-landscape-suite-rubi-pousada-voce-que-sabe.jpg");
 }
+.suites-pousada ul li > .imagem.rubi-34 {
+  background-image: url("../../assets/images/suites/Rubi/Suíte-34/foto-suíte-34-rubi-perspectiva-01.jpg");
+}
+.suites-pousada ul li > .imagem.rubi-35 {
+  background-image: url("../../assets/images/suites/Rubi/Suíte-35/foto-suíte-35-rubiperspectiva-01.jpg");
+}
 .suites-pousada ul li > .imagem.esmeralda {
   background-image: url("../../assets/images/suites/Esmeralda/thumb-landscape-suite-esmeralda-pousada-voce-que-sabe.jpg");
+}
+.suites-pousada ul li > .imagem.esmeralda-24 {
+  background-image: url("../../assets/images/suites/Esmeralda/Suíte-24/Foto-suíte-24-esmeralda-perspectiva-01.jpg");
+}
+.suites-pousada ul li > .imagem.esmeralda-25 {
+  background-image: url("../../assets/images/suites/Esmeralda/Suíte-25/Foto-suíte-25-esmeralda-perspectiva-01.jpg");
 }
 .suites-pousada ul li > .imagem.perola {
   background-image: url("../../assets/images/suites/Perola/thumb-landscape-suite-perola-pousada-voce-que-sabe.jpg");

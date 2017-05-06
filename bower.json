@@ -10,6 +10,7 @@
   "devDependencies": {
     "eric-mayer-reset-less-sass": "https://github.com/dnstld/eric-mayer-reset-less-sass.git",
     "vegas": "^2.4.0",
-    "jquery-validation": "https://github.com/jquery-validation/jquery-validation.git#^1.16.0"
+    "jquery-validation": "https://github.com/jquery-validation/jquery-validation.git#^1.16.0",
+    "fancybox": "https://github.com/fancyapps/fancybox.git#^3.0.47"
   }
 }

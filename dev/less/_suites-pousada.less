@@ -16,6 +16,37 @@
         background-size: cover;
         position: relative;
 
+        > a {
+          display: inline-block;
+          padding: 10px;
+          border: 1px solid rgba(255, 255, 255, .2);
+          border-radius: 5px;
+          background-color: rgba(0, 0, 0, .3);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          > span {
+            .icon(@icon-foto);
+          }
+          &.hidden {
+            display: none;
+            overflow: hidden;
+          }
+
+          .mobile({
+						font-size: 16px;  
+					});
+					.desktop({
+						font-size: 18px;
+            padding: 20px;
+					});
+					.huge({
+						font-size: 20px;
+					});
+        }
+
         &:before {
           content: "";
           display: block;
@@ -54,7 +85,7 @@
           background-attachment: fixed;
         });
         .huge({
-          height: 500px;
+          height: 450px;
         });
 
         &.brilhante {
@@ -82,10 +113,8 @@
           background-image: url("../../assets/images/suites/Prata/thumb-landscape-suite-prata-pousada-voce-que-sabe.jpg");
         }
       }
-      > .info {
+      > .informacoes {
         padding: 20px;
-        text-transform: uppercase;
-        text-align: center;
 
         .tablet({
           padding: 40px;
@@ -104,6 +133,8 @@
           border-bottom: 1px solid rgba(255, 255, 255, .2);
           padding-bottom: 10px;
           margin-bottom: 10px;
+          text-transform: uppercase;
+          text-align: center;
 
           .tablet({
             font-size: 22px;
@@ -123,6 +154,7 @@
           margin-bottom: 20px;
           font-size: 10px;
           line-height: 150%;
+          text-align: center;
 
           .tablet({
 						font-size: 12px;
@@ -133,6 +165,10 @@
 					.huge({
 						font-size: 16px;
 					});
+
+          &.suites {
+            color: @cor-logo;
+          }
         }
         > .preco {
           display: block;
@@ -164,6 +200,57 @@
 					.huge({
 						font-size: 20px;
 					});
+        }
+        > .detalhes { 
+          text-align: left;
+
+          > .blocos {
+            margin-top: 20px;
+
+            &:first-child {
+              margin-top: 0;
+            }
+            > h3 {
+              display: block;
+              font-size: 10px;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              margin-bottom: 10px;
+
+              > span {
+                display: block;
+                float: left;
+                margin-right: 5px;
+
+                &.periodo {
+                  .icon(@icon-periodo, 12px);
+                }
+                &.pernoite {
+                  .icon(@icon-pernoite, 12px);
+                }
+                &.descricao {
+                  .icon(@icon-coracao, 12px);
+                }
+              }
+            }
+            > p {
+              line-height: 150%;
+
+              &.preco {
+                color: @cor-logo;
+
+                .mobile({
+                  font-size: 16px;
+                });
+                .desktop({
+                  font-size: 18px;
+                });
+                .huge({
+                  font-size: 20px;
+                });
+              }
+            }
+          }
         }
       }
     }

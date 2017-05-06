@@ -2382,3 +2382,171 @@ input:focus {
   padding: 20px;
   color: #1a1a1a;
 }
+.suites-pousada ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.suites-pousada ul li {
+  border-top: 2px solid #fff;
+}
+.suites-pousada ul li:first-child {
+  border-top-color: #1a1a1a;
+}
+.suites-pousada ul li > .imagem {
+  display: block;
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.suites-pousada ul li > .imagem:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #1a1a1a;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+@media (min-width: 48em) {
+  .suites-pousada ul li > .imagem {
+    height: 250px;
+  }
+}
+@media (min-width: 62em) {
+  .suites-pousada ul li > .imagem {
+    height: 350px;
+    background-attachment: fixed;
+  }
+}
+.suites-pousada ul li > .imagem.brilhante {
+  background-image: url("../../assets/images/suites/Brilhante/thumb-landscape-suite-brilhante-pousada-voce-que-sabe.jpg");
+}
+.suites-pousada ul li > .imagem.rubi-duplex {
+  background-image: url("../../assets/images/suites/Rubi-Duplex/thumb-landscape-suite-rubi-duplex-pousada-voce-que-sabe.jpg");
+}
+.suites-pousada ul li > .imagem.rubi {
+  background-image: url("../../assets/images/suites/Rubi/thumb-landscape-suite-rubi-pousada-voce-que-sabe.jpg");
+}
+.suites-pousada ul li > .imagem.esmeralda {
+  background-image: url("../../assets/images/suites/Esmeralda/thumb-landscape-suite-esmeralda-pousada-voce-que-sabe.jpg");
+}
+.suites-pousada ul li > .imagem.perola {
+  background-image: url("../../assets/images/suites/Perola/thumb-landscape-suite-perola-pousada-voce-que-sabe.jpg");
+}
+.suites-pousada ul li > .imagem.diamante {
+  background-image: url("../../assets/images/suites/Diamante/thumb-landscape-suite-diamante-pousada-voce-que-sabe.jpg");
+}
+.suites-pousada ul li > .imagem.ouro {
+  background-image: url("../../assets/images/suites/Ouro/thumb-landscape-suite-ouro-pousada-voce-que-sabe.jpg");
+}
+.suites-pousada ul li > .imagem.prata {
+  background-image: url("../../assets/images/suites/Prata/thumb-landscape-suite-prata-pousada-voce-que-sabe.jpg");
+}
+.suites-pousada ul li > .info {
+  padding: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (min-width: 48em) {
+  .suites-pousada ul li > .info {
+    padding: 40px;
+  }
+}
+@media (min-width: 62em) {
+  .suites-pousada ul li > .info {
+    padding: 60px;
+  }
+}
+.suites-pousada ul li > .info > .titulo {
+  display: block;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+@media (min-width: 48em) {
+  .suites-pousada ul li > .info > .titulo {
+    font-size: 22px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 62em) {
+  .suites-pousada ul li > .info > .titulo {
+    font-size: 24px;
+  }
+}
+@media (min-width: 75em) {
+  .suites-pousada ul li > .info > .titulo {
+    font-size: 26px;
+  }
+}
+.suites-pousada ul li > .info > .descricao {
+  margin-bottom: 20px;
+  font-size: 10px;
+  line-height: 150%;
+}
+@media (min-width: 48em) {
+  .suites-pousada ul li > .info > .descricao {
+    font-size: 12px;
+  }
+}
+@media (min-width: 62em) {
+  .suites-pousada ul li > .info > .descricao {
+    font-size: 14px;
+  }
+}
+@media (min-width: 75em) {
+  .suites-pousada ul li > .info > .descricao {
+    font-size: 16px;
+  }
+}
+.suites-pousada ul li > .info > .preco {
+  display: block;
+  margin-bottom: 20px;
+}
+@media (min-width: 30em) {
+  .suites-pousada ul li > .info > .preco {
+    font-size: 16px;
+  }
+}
+@media (min-width: 62em) {
+  .suites-pousada ul li > .info > .preco {
+    font-size: 18px;
+  }
+}
+@media (min-width: 75em) {
+  .suites-pousada ul li > .info > .preco {
+    font-size: 20px;
+  }
+}
+.suites-pousada ul li > .info > a {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+@media (min-width: 30em) {
+  .suites-pousada ul li > .info > a {
+    font-size: 16px;
+  }
+}
+@media (min-width: 62em) {
+  .suites-pousada ul li > .info > a {
+    font-size: 18px;
+    padding: 20px;
+  }
+}
+@media (min-width: 75em) {
+  .suites-pousada ul li > .info > a {
+    font-size: 20px;
+  }
+}

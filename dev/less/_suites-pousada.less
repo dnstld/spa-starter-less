@@ -1,0 +1,147 @@
+.suites-pousada {
+  ul {
+    .clearfix;
+
+    li {
+      border-top: 2px solid #fff;
+
+      &:first-child {
+        border-top-color: @cor-principal;
+      }
+      > .imagem {
+        display: block;
+        width: 100%;
+        height: 150px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        &:before {
+          content: "";
+          display: block;
+          width: 0; 
+          height: 0; 
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 10px solid @cor-principal;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          transform: translateX(-50%);
+        }
+
+        .tablet({
+          height: 250px;
+        });
+        .desktop({
+          height: 350px;
+          background-attachment: fixed;
+        });
+
+        &.brilhante {
+          background-image: url("../../assets/images/suites/Brilhante/thumb-landscape-suite-brilhante-pousada-voce-que-sabe.jpg");
+        }
+        &.rubi-duplex {
+          background-image: url("../../assets/images/suites/Rubi-Duplex/thumb-landscape-suite-rubi-duplex-pousada-voce-que-sabe.jpg");
+        }
+        &.rubi {
+          background-image: url("../../assets/images/suites/Rubi/thumb-landscape-suite-rubi-pousada-voce-que-sabe.jpg");
+        }
+        &.esmeralda {
+          background-image: url("../../assets/images/suites/Esmeralda/thumb-landscape-suite-esmeralda-pousada-voce-que-sabe.jpg");
+        }
+        &.perola {
+          background-image: url("../../assets/images/suites/Perola/thumb-landscape-suite-perola-pousada-voce-que-sabe.jpg");
+        }
+        &.diamante {
+          background-image: url("../../assets/images/suites/Diamante/thumb-landscape-suite-diamante-pousada-voce-que-sabe.jpg");
+        }
+        &.ouro {
+          background-image: url("../../assets/images/suites/Ouro/thumb-landscape-suite-ouro-pousada-voce-que-sabe.jpg");
+        }
+        &.prata {
+          background-image: url("../../assets/images/suites/Prata/thumb-landscape-suite-prata-pousada-voce-que-sabe.jpg");
+        }
+      }
+      > .info {
+        padding: 20px;
+        text-transform: uppercase;
+        text-align: center;
+
+        .tablet({
+          padding: 40px;
+        });
+        .desktop({
+          padding: 60px;
+        });
+
+        > .titulo {
+          display: block;
+          font-size: 18px;
+          letter-spacing: 1px;
+          border-bottom: 1px solid rgba(255, 255, 255, .2);
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+
+          .tablet({
+            font-size: 22px;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+          });
+          .desktop({
+            font-size: 24px;
+          });
+          .huge({
+            font-size: 26px;
+          });
+        }
+        > .descricao {
+          margin-bottom: 20px;
+          font-size: 10px;
+          line-height: 150%;
+
+          .tablet({
+						font-size: 12px;
+					});
+					.desktop({
+						font-size: 14px;
+					});
+					.huge({
+						font-size: 16px;
+					});
+        }
+        > .preco {
+          display: block;
+          margin-bottom: 20px;
+
+          .mobile({
+						font-size: 16px;
+					});
+					.desktop({
+						font-size: 18px;
+					});
+					.huge({
+						font-size: 20px;
+					});
+        }
+        > a {
+          display: inline-block;
+          padding: 10px;
+          border: 1px solid rgba(255, 255, 255, .2);
+          border-radius: 5px;
+
+          .mobile({
+						font-size: 16px;
+					});
+					.desktop({
+						font-size: 18px;
+            padding: 20px;
+					});
+					.huge({
+						font-size: 20px;
+					});
+        }
+      }
+    }
+  }
+}

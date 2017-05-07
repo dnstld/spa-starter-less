@@ -3212,7 +3212,7 @@ input:focus {
   background-image: url("../../assets/images/suites/Prata/thumb-landscape-suite-prata-pousada-voce-que-sabe.jpg");
 }
 .suites-pousada ul li > .imagem.prata-01 {
-  background-image: url("../../assets/images/suites/Prata/foto-suíte-01-prata-perspectiva-01.jpg");
+  background-image: url("../../assets/images/suites/Prata/foto-suíte-08-prata-perspectiva-01.jpg");
 }
 .suites-pousada ul li > .informacoes {
   padding: 20px;
@@ -3271,6 +3271,26 @@ input:focus {
   .suites-pousada ul li > .informacoes > .descricao {
     font-size: 16px;
   }
+}
+.suites-pousada ul li > .informacoes > .descricao > span {
+  margin-right: 10px;
+}
+.suites-pousada ul li > .informacoes > .descricao > span::before {
+  content: "\e905";
+}
+.suites-pousada ul li > .informacoes > .descricao > span::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
 }
 .suites-pousada ul li > .informacoes > .descricao.suites {
   color: red;
@@ -3336,6 +3356,9 @@ input:focus {
   .suites-pousada ul li > .informacoes > .detalhes > .blocos.periodos,
   .suites-pousada ul li > .informacoes > .detalhes > .blocos.pernoites {
     margin-top: 0;
+  }
+  .suites-pousada ul li > .informacoes > .detalhes > .blocos.descricao {
+    width: 100%;
   }
 }
 .suites-pousada ul li > .informacoes > .detalhes > .blocos:first-child {

@@ -64,16 +64,6 @@
             border-right-width: 20px;
             border-bottom-width: 20px;
           });
-          .desktop({
-            border-left-width: 30px;
-            border-right-width: 30px;
-            border-bottom-width: 30px;
-          });
-          .huge({
-            border-left-width: 40px;
-            border-right-width: 40px;
-            border-bottom-width: 40px;
-          });
         }
 
         .tablet({
@@ -120,6 +110,15 @@
         &.perola {
           background-image: url("../../assets/images/suites/Perola/thumb-landscape-suite-perola-pousada-voce-que-sabe.jpg");
         }
+        &.perola-15 {
+          background-image: url("../../assets/images/suites/Perola/Suíte-15/foto-suíte-15-perola-vintage-perspectiva-01.jpg");
+        }
+        &.perola-19 {
+          background-image: url("../../assets/images/suites/Perola/Suíte-19/foto-suíte-19-perola-vintage-perspectiva-01.jpg");
+        }
+        &.perola-20 {
+          background-image: url("../../assets/images/suites/Perola/Suíte-20/foto-suíte-20-perola-vintage-perspectiva-01.jpg");
+        }
         &.diamante {
           background-image: url("../../assets/images/suites/Diamante/thumb-landscape-suite-diamante-pousada-voce-que-sabe.jpg");
         }
@@ -136,12 +135,6 @@
 
         .tablet({
           padding: 40px;
-        });
-        .desktop({
-          padding: 60px;
-        });
-        .huge({
-          padding: 80px;
         });
 
         > .titulo {
@@ -219,11 +212,22 @@
 						font-size: 20px;
 					});
         }
-        > .detalhes { 
+        > .detalhes {
+          .clearfix;
           text-align: left;
 
           > .blocos {
             margin-top: 20px;
+
+            .tablet({
+              width: 50%;
+              float: left;
+
+              &.periodos,
+              &.pernoites {
+                margin-top: 0;
+              }
+            });
 
             &:first-child {
               margin-top: 0;

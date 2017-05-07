@@ -3096,20 +3096,6 @@ input:focus {
     border-bottom-width: 20px;
   }
 }
-@media (min-width: 62em) {
-  .suites-pousada ul li > .imagem:before {
-    border-left-width: 30px;
-    border-right-width: 30px;
-    border-bottom-width: 30px;
-  }
-}
-@media (min-width: 75em) {
-  .suites-pousada ul li > .imagem:before {
-    border-left-width: 40px;
-    border-right-width: 40px;
-    border-bottom-width: 40px;
-  }
-}
 @media (min-width: 48em) {
   .suites-pousada ul li > .imagem {
     height: 250px;
@@ -3159,6 +3145,15 @@ input:focus {
 .suites-pousada ul li > .imagem.perola {
   background-image: url("../../assets/images/suites/Perola/thumb-landscape-suite-perola-pousada-voce-que-sabe.jpg");
 }
+.suites-pousada ul li > .imagem.perola-15 {
+  background-image: url("../../assets/images/suites/Perola/Suíte-15/foto-suíte-15-perola-vintage-perspectiva-01.jpg");
+}
+.suites-pousada ul li > .imagem.perola-19 {
+  background-image: url("../../assets/images/suites/Perola/Suíte-19/foto-suíte-19-perola-vintage-perspectiva-01.jpg");
+}
+.suites-pousada ul li > .imagem.perola-20 {
+  background-image: url("../../assets/images/suites/Perola/Suíte-20/foto-suíte-20-perola-vintage-perspectiva-01.jpg");
+}
 .suites-pousada ul li > .imagem.diamante {
   background-image: url("../../assets/images/suites/Diamante/thumb-landscape-suite-diamante-pousada-voce-que-sabe.jpg");
 }
@@ -3175,16 +3170,6 @@ input:focus {
 @media (min-width: 48em) {
   .suites-pousada ul li > .informacoes {
     padding: 40px;
-  }
-}
-@media (min-width: 62em) {
-  .suites-pousada ul li > .informacoes {
-    padding: 60px;
-  }
-}
-@media (min-width: 75em) {
-  .suites-pousada ul li > .informacoes {
-    padding: 80px;
   }
 }
 .suites-pousada ul li > .informacoes > .titulo {
@@ -3284,8 +3269,23 @@ input:focus {
 .suites-pousada ul li > .informacoes > .detalhes {
   text-align: left;
 }
+.suites-pousada ul li > .informacoes > .detalhes:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .suites-pousada ul li > .informacoes > .detalhes > .blocos {
   margin-top: 20px;
+}
+@media (min-width: 48em) {
+  .suites-pousada ul li > .informacoes > .detalhes > .blocos {
+    width: 50%;
+    float: left;
+  }
+  .suites-pousada ul li > .informacoes > .detalhes > .blocos.periodos,
+  .suites-pousada ul li > .informacoes > .detalhes > .blocos.pernoites {
+    margin-top: 0;
+  }
 }
 .suites-pousada ul li > .informacoes > .detalhes > .blocos:first-child {
   margin-top: 0;

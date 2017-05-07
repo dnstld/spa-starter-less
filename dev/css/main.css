@@ -3202,6 +3202,12 @@ input:focus {
 .suites-pousada ul li > .imagem.ouro {
   background-image: url("../../assets/images/suites/Ouro/thumb-landscape-suite-ouro-pousada-voce-que-sabe.jpg");
 }
+.suites-pousada ul li > .imagem.ouro-32 {
+  background-image: url("../../assets/images/suites/Ouro/Suíte-32/Foto-suíte-32-ouro-perspectiva-01.jpg");
+}
+.suites-pousada ul li > .imagem.ouro-33 {
+  background-image: url("../../assets/images/suites/Ouro/Suíte-33/Foto-suíte-33-ouro-perspectiva-01.jpg");
+}
 .suites-pousada ul li > .imagem.prata {
   background-image: url("../../assets/images/suites/Prata/thumb-landscape-suite-prata-pousada-voce-que-sabe.jpg");
 }

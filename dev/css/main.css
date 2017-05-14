@@ -1555,7 +1555,7 @@ input:focus {
   clear: both;
 }
 .menu-principal nav > ul li a.ativo {
-  color: red;
+  color: #bf000a;
 }
 @media (min-width: 48em) {
   .menu-principal nav > ul li a {
@@ -1672,7 +1672,7 @@ input:focus {
   vertical-align: middle;
 }
 .menu-principal nav > ul li a > .icone.ativo {
-  color: red;
+  color: #bf000a;
 }
 .menu-principal nav > aside:after {
   content: "";
@@ -1763,7 +1763,7 @@ input:focus {
   text-align: center;
 }
 .menu-rodape > nav > ul > li > a.ativo {
-  color: red;
+  color: #bf000a;
 }
 @media (min-width: 30em) {
   .menu-rodape > nav > ul > li > a {
@@ -2609,7 +2609,7 @@ input:focus {
 }
 .nossas-promocoes > .promocoes {
   max-width: 300px;
-  background-color: red;
+  background-color: #bf000a;
   padding: 10px;
   border-radius: 10px;
   margin: 0 auto;
@@ -2930,7 +2930,7 @@ input:focus {
   text-align: center;
 }
 .nossos-contatos > .contatos > .blocos > ul > li a.gmap {
-  background-color: red;
+  background-color: #bf000a;
 }
 .nossos-contatos > .contatos > .blocos > ul > li a.gmap::before {
   content: "\e90a";
@@ -2992,7 +2992,7 @@ input:focus {
   }
 }
 .rodape-principal > section > p > a {
-  color: red;
+  color: #bf000a;
   text-decoration: none;
 }
 .modalFacilidades {
@@ -3293,12 +3293,12 @@ input:focus {
   vertical-align: middle;
 }
 .suites-pousada ul li > .informacoes > .descricao.suites {
-  color: red;
+  color: #bf000a;
 }
 .suites-pousada ul li > .informacoes > .preco {
   display: block;
   margin-bottom: 20px;
-  color: red;
+  color: #bf000a;
 }
 @media (min-width: 30em) {
   .suites-pousada ul li > .informacoes > .preco {
@@ -3431,7 +3431,7 @@ input:focus {
   line-height: 150%;
 }
 .suites-pousada ul li > .informacoes > .detalhes > .blocos > p.preco {
-  color: red;
+  color: #bf000a;
 }
 @media (min-width: 30em) {
   .suites-pousada ul li > .informacoes > .detalhes > .blocos > p.preco {

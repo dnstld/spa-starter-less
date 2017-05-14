@@ -62,15 +62,15 @@ var Pousada = {
 
     $('#slideshow-home').vegas({
       slides: [
-        { src: './assets/images/suites/Brilhante/Foto-suíte-36-brilhante-perspectiva-02.jpg' },
-        { src: './assets/images/suites/Brilhante/Foto-suíte-36-brilhante-perspectiva-04.jpg' },
-        { src: './assets/images/suites/Rubi-Duplex/Suíte-17/foto-suíte-17-rubi-duplex-perspectiva-01.jpg' },
-        { src: './assets/images/suites/Rubi/Suíte-35/foto-suíte-35-rubiperspectiva-04.jpg' },
-        { src: './assets/images/suites/Esmeralda/Suíte-24/Foto-suíte-24-esmeralda-perspectiva-01.jpg' },
-        { src: './assets/images/suites/Perola/Suíte-20/foto-suíte-20-perola-vintage-perspectiva-01.jpg' },
-        { src: './assets/images/suites/Diamante/Suíte-27/foto-suite-27-diamante-perspectiva-01.jpg' },
-        { src: './assets/images/suites/Ouro/Suíte-33/Foto-suíte-33-ouro-perspectiva-01.jpg' },
-        { src: './assets/images/suites/Prata/foto-suíte-08-prata-perspectiva-01.jpg' }
+        { src: './assets/images/suites/panoramicas/foto-panoramica-suite-brilhante-02.jpg' },
+        { src: './assets/images/suites/panoramicas/foto-panoramica-suite-brilhante-04.jpg' },
+        { src: './assets/images/suites/panoramicas/foto-panoramica-suite-rubi-duplex-17.jpg' },
+        { src: './assets/images/suites/panoramicas/foto-panoramica-suite-rubi-34.jpg' },
+        { src: './assets/images/suites/panoramicas/foto-panoramica-suite-esmeralda-24.jpg' },
+        { src: './assets/images/suites/panoramicas/foto-panoramica-suite-perola-20.jpg' },
+        { src: './assets/images/suites/panoramicas/foto-panoramica-suite-diamante-11.jpg' },
+        { src: './assets/images/suites/panoramicas/foto-panoramica-suite-ouro-33.jpg' },
+        { src: './assets/images/suites/panoramicas/foto-panoramica-suite-prata-08.jpg' }
       ],
       animation: 'kenburns'
     });

@@ -3201,37 +3201,32 @@ input:focus {
   }
 }
 .suites-pousada ul li > .imagem.brilhante {
-  background-image: url("../../assets/images/suites/Brilhante/thumb-landscape-suite-brilhante-pousada-voce-que-sabe.jpg");
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-brilhante-04.jpg");
 }
-.suites-pousada ul li > .imagem.rubi-duplex {
-  background-image: url("../../assets/images/suites/Rubi-Duplex/thumb-landscape-suite-rubi-duplex-pousada-voce-que-sabe.jpg");
-}
+.suites-pousada ul li > .imagem.rubi-duplex,
 .suites-pousada ul li > .imagem.rubi-duplex-17 {
-  background-image: url("../../assets/images/suites/Rubi-Duplex/Suíte-17/foto-suíte-17-rubi-duplex-perspectiva-01.jpg");
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-rubi-duplex-17.jpg");
 }
 .suites-pousada ul li > .imagem.rubi-duplex-18 {
   background-image: url("../../assets/images/suites/Rubi-Duplex/Suíte-18/foto-suíte-18-rubi-duplex-perspectiva-01.jpg");
 }
-.suites-pousada ul li > .imagem.rubi {
-  background-image: url("../../assets/images/suites/Rubi/thumb-landscape-suite-rubi-pousada-voce-que-sabe.jpg");
-}
+.suites-pousada ul li > .imagem.rubi,
 .suites-pousada ul li > .imagem.rubi-34 {
-  background-image: url("../../assets/images/suites/Rubi/Suíte-34/foto-suíte-34-rubi-perspectiva-01.jpg");
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-rubi-34.jpg");
 }
 .suites-pousada ul li > .imagem.rubi-35 {
   background-image: url("../../assets/images/suites/Rubi/Suíte-35/foto-suíte-35-rubiperspectiva-01.jpg");
 }
-.suites-pousada ul li > .imagem.esmeralda {
-  background-image: url("../../assets/images/suites/Esmeralda/thumb-landscape-suite-esmeralda-pousada-voce-que-sabe.jpg");
-}
+.suites-pousada ul li > .imagem.esmeralda,
 .suites-pousada ul li > .imagem.esmeralda-24 {
-  background-image: url("../../assets/images/suites/Esmeralda/Suíte-24/Foto-suíte-24-esmeralda-perspectiva-01.jpg");
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-esmeralda-24.jpg");
 }
 .suites-pousada ul li > .imagem.esmeralda-25 {
   background-image: url("../../assets/images/suites/Esmeralda/Suíte-25/Foto-suíte-25-esmeralda-perspectiva-01.jpg");
 }
-.suites-pousada ul li > .imagem.perola {
-  background-image: url("../../assets/images/suites/Perola/thumb-landscape-suite-perola-pousada-voce-que-sabe.jpg");
+.suites-pousada ul li > .imagem.perola,
+.suites-pousada ul li > .imagem.perola-20 {
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-perola-20.jpg");
 }
 .suites-pousada ul li > .imagem.perola-15 {
   background-image: url("../../assets/images/suites/Perola/Suíte-15/foto-suíte-15-perola-vintage-perspectiva-01.jpg");
@@ -3239,11 +3234,9 @@ input:focus {
 .suites-pousada ul li > .imagem.perola-19 {
   background-image: url("../../assets/images/suites/Perola/Suíte-19/foto-suíte-19-perola-vintage-perspectiva-01.jpg");
 }
-.suites-pousada ul li > .imagem.perola-20 {
-  background-image: url("../../assets/images/suites/Perola/Suíte-20/foto-suíte-20-perola-vintage-perspectiva-01.jpg");
-}
-.suites-pousada ul li > .imagem.diamante {
-  background-image: url("../../assets/images/suites/Diamante/thumb-landscape-suite-diamante-pousada-voce-que-sabe.jpg");
+.suites-pousada ul li > .imagem.diamante,
+.suites-pousada ul li > .imagem.diamante-11 {
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-diamante-11.jpg");
 }
 .suites-pousada ul li > .imagem.diamante-13 {
   background-image: url("../../assets/images/suites/Diamante/Suíte-13/Foto-suíte-13-diamanete-perspectiva-01.jpg");
@@ -3259,9 +3252,6 @@ input:focus {
 }
 .suites-pousada ul li > .imagem.diamante-23 {
   background-image: url("../../assets/images/suites/Diamante/Suíte-23/Foto-suíte-23-diamanete-perspectiva-01.jpg");
-}
-.suites-pousada ul li > .imagem.diamante-11 {
-  background-image: url("../../assets/images/suites/Diamante/Suíte-11/Foto-suíte-11-diamanete-perspectiva-01.jpg");
 }
 .suites-pousada ul li > .imagem.diamante-12 {
   background-image: url("../../assets/images/suites/Diamante/Suíte-12/Foto-suíte-12-diamanete-perspectiva-01.jpg");
@@ -3287,20 +3277,15 @@ input:focus {
 .suites-pousada ul li > .imagem.diamante-27 {
   background-image: url("../../assets/images/suites/Diamante/Suíte-27/foto-suite-27-diamante-perspectiva-01.jpg");
 }
-.suites-pousada ul li > .imagem.ouro {
-  background-image: url("../../assets/images/suites/Ouro/thumb-landscape-suite-ouro-pousada-voce-que-sabe.jpg");
+.suites-pousada ul li > .imagem.ouro,
+.suites-pousada ul li > .imagem.ouro-33 {
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-ouro-33.jpg");
 }
 .suites-pousada ul li > .imagem.ouro-32 {
   background-image: url("../../assets/images/suites/Ouro/Suíte-32/Foto-suíte-32-ouro-perspectiva-01.jpg");
 }
-.suites-pousada ul li > .imagem.ouro-33 {
-  background-image: url("../../assets/images/suites/Ouro/Suíte-33/Foto-suíte-33-ouro-perspectiva-01.jpg");
-}
 .suites-pousada ul li > .imagem.prata {
-  background-image: url("../../assets/images/suites/Prata/thumb-landscape-suite-prata-pousada-voce-que-sabe.jpg");
-}
-.suites-pousada ul li > .imagem.prata-01 {
-  background-image: url("../../assets/images/suites/Prata/foto-suíte-08-prata-perspectiva-01.jpg");
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-prata-08.jpg");
 }
 .suites-pousada ul li > .informacoes {
   padding: 20px;

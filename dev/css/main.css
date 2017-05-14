@@ -2583,6 +2583,81 @@ input:focus {
     font-size: 16px;
   }
 }
+#higiene,
+#seguranca,
+#permanencia,
+#agua,
+#wifi,
+#tv,
+#ar,
+#seducao {
+  text-align: center;
+}
+#higiene h2,
+#seguranca h2,
+#permanencia h2,
+#agua h2,
+#wifi h2,
+#tv h2,
+#ar h2,
+#seducao h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+@media (min-width: 30em) {
+  #higiene h2,
+  #seguranca h2,
+  #permanencia h2,
+  #agua h2,
+  #wifi h2,
+  #tv h2,
+  #ar h2,
+  #seducao h2 {
+    font-size: 20px;
+    margin: 0 20px 20px 20px;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 48em) {
+  #higiene h2,
+  #seguranca h2,
+  #permanencia h2,
+  #agua h2,
+  #wifi h2,
+  #tv h2,
+  #ar h2,
+  #seducao h2 {
+    font-size: 22px;
+    border-style: none;
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 62em) {
+  #higiene h2,
+  #seguranca h2,
+  #permanencia h2,
+  #agua h2,
+  #wifi h2,
+  #tv h2,
+  #ar h2,
+  #seducao h2 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 75em) {
+  #higiene h2,
+  #seguranca h2,
+  #permanencia h2,
+  #agua h2,
+  #wifi h2,
+  #tv h2,
+  #ar h2,
+  #seducao h2 {
+    font-size: 26px;
+  }
+}
 .nossas-promocoes {
   background-image: url('../../assets/images/suites/Brilhante/Foto-suíte-36-brilhante-perspectiva-02.jpg');
   background-repeat: no-repeat;

@@ -3113,7 +3113,6 @@ input:focus {
   display: block;
   font-size: 16px;
   letter-spacing: 1px;
-  /*border-bottom: 1px solid rgba(255, 255, 255, .2);*/
   margin: 10px 0;
   text-transform: uppercase;
   text-align: center;
@@ -3316,6 +3315,13 @@ input:focus {
 .suites-pousada ul li > .informacoes {
   padding: 20px;
   text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.suites-pousada ul li > .informacoes:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 @media (min-width: 75em) {
   .suites-pousada ul li > .informacoes {
@@ -3405,15 +3411,9 @@ input:focus {
 }
 @media (min-width: 48em) {
   .suites-pousada ul li > .informacoes > .detalhes > .blocos {
+    margin-top: 0;
     width: 50%;
     float: left;
-  }
-  .suites-pousada ul li > .informacoes > .detalhes > .blocos.periodos,
-  .suites-pousada ul li > .informacoes > .detalhes > .blocos.pernoites {
-    margin-top: 0;
-  }
-  .suites-pousada ul li > .informacoes > .detalhes > .blocos.descricao {
-    width: 100%;
   }
 }
 .suites-pousada ul li > .informacoes > .detalhes > .blocos:first-child {

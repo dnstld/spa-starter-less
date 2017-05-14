@@ -3,15 +3,37 @@
     .clearfix;
 
     li {
-      border-top: 2px solid #fff;
+      border-top: 20px solid #fff;
 
       &:first-child {
+        border-top-width: 2px;
         border-top-color: @cor-principal;
+      }
+      > .titulo {
+        display: block;
+        font-size: 16px;
+        letter-spacing: 1px;
+        /*border-bottom: 1px solid rgba(255, 255, 255, .2);*/
+        margin: 10px 0;
+        text-transform: uppercase;
+        text-align: center;
+
+        .tablet({
+          font-size: 18px;
+          margin: 20px 0;
+        });
+        .desktop({
+          font-size: 20px;
+        });
+        .huge({
+          font-size: 22px;
+          margin: 40px 0;
+        });
       }
       > .imagem {
         display: block;
         width: 100%;
-        height: 150px;
+        height: 250px;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
@@ -67,14 +89,13 @@
         }
 
         .tablet({
-          height: 250px;
+          height: 350px;
         });
         .desktop({
-          height: 350px;
-          background-attachment: fixed;
+          height: 450px;
         });
         .huge({
-          height: 450px;
+          height: 550px;
         });
 
         &.brilhante {
@@ -169,48 +190,14 @@
         padding: 20px;
         text-align: center;
 
-        .tablet({
+        .huge({
           padding: 40px;
         });
 
-        > .titulo {
-          display: block;
-          font-size: 16px;
-          letter-spacing: 1px;
-          border-bottom: 1px solid rgba(255, 255, 255, .2);
-          padding-bottom: 10px;
-          margin-bottom: 10px;
-          text-transform: uppercase;
-
-          .tablet({
-            font-size: 18px;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-          });
-          .desktop({
-            font-size: 20px;
-          });
-          .huge({
-            font-size: 22px;
-            padding-bottom: 40px;
-            margin-bottom: 40px;
-          });
-        }
         > .descricao {
           margin-bottom: 20px;
-          font-size: 10px;
           line-height: 150%;
           text-align: center;
-
-          .tablet({
-						font-size: 12px;
-					});
-					.desktop({
-						font-size: 14px;
-					});
-					.huge({
-						font-size: 16px;
-					});
 
           > span {
             .icon(@icon-coracao);

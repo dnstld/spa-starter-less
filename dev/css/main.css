@@ -2976,6 +2976,25 @@ input:focus {
   text-align: center;
   vertical-align: middle;
 }
+.nossos-contatos > .contatos > .blocos > a {
+  line-height: 120%;
+  font-size: 14px;
+}
+@media (min-width: 30em) {
+  .nossos-contatos > .contatos > .blocos > a {
+    font-size: 16px;
+  }
+}
+@media (min-width: 48em) {
+  .nossos-contatos > .contatos > .blocos > a {
+    font-size: 9px;
+  }
+}
+@media (min-width: 62em) {
+  .nossos-contatos > .contatos > .blocos > a {
+    font-size: 10px;
+  }
+}
 .nossos-contatos > .contatos > .blocos > ul > li a {
   display: block;
   float: left;

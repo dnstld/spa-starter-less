@@ -5,7 +5,7 @@
 	color: @cor-principal;
 
 	> h1 {
-		font-size: 18px;
+		font-size: 16px;
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		text-align: center;
@@ -13,14 +13,18 @@
 		margin-bottom: 10px;
 
 		.tablet({
-			font-size: 22px;
+			font-size: 18px;
 		});
 		.desktop({
-			font-size: 24px;
+			font-size: 20px;
 		});
 		.huge({
-			font-size: 26px;
+			font-size: 22px;
 		});
+
+		&.temosTambem {
+			margin-top: 20px;
+		}
 	}
 	> ul {
 		.clearfix;

@@ -1314,7 +1314,9 @@ body {
   height: 100%;
   background-color: #1a1a1a;
   color: #fff;
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
 }
 strong {
   font-weight: bold;
@@ -1542,12 +1544,12 @@ input:focus {
 }
 .menu-principal nav > ul li a {
   display: block;
-  height: 40px;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  padding: 15px 0;
 }
 .menu-principal nav > ul li a:after {
   content: "";
@@ -1570,11 +1572,6 @@ input:focus {
 @media (min-width: 62em) {
   .menu-principal nav > ul li a {
     font-size: 16px;
-  }
-}
-@media (min-width: 75em) {
-  .menu-principal nav > ul li a {
-    font-size: 18px;
   }
 }
 .menu-principal nav > ul li a > .icone {
@@ -1817,22 +1814,22 @@ input:focus {
 }
 @media (min-width: 30em) {
   .header-principal > h1 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media (min-width: 48em) {
   .header-principal > h1 {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 @media (min-width: 62em) {
   .header-principal > h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 @media (min-width: 75em) {
   .header-principal > h1 {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 .banner-principal {
@@ -1971,7 +1968,7 @@ input:focus {
   }
 }
 .diferenciais-pousada > .diferenciais > h1 {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
@@ -1981,26 +1978,26 @@ input:focus {
 }
 @media (min-width: 30em) {
   .diferenciais-pousada > .diferenciais > h1 {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 20px;
     padding-bottom: 20px;
   }
 }
 @media (min-width: 48em) {
   .diferenciais-pousada > .diferenciais > h1 {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 @media (min-width: 62em) {
   .diferenciais-pousada > .diferenciais > h1 {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 30px;
     padding-bottom: 30px;
   }
 }
 @media (min-width: 75em) {
   .diferenciais-pousada > .diferenciais > h1 {
-    font-size: 26px;
+    font-size: 22px;
   }
 }
 .diferenciais-pousada > .diferenciais > ul li {
@@ -2160,7 +2157,7 @@ input:focus {
   clear: both;
 }
 .suites-home > h1 {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
@@ -2169,18 +2166,21 @@ input:focus {
 }
 @media (min-width: 48em) {
   .suites-home > h1 {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 @media (min-width: 62em) {
   .suites-home > h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 @media (min-width: 75em) {
   .suites-home > h1 {
-    font-size: 26px;
+    font-size: 22px;
   }
+}
+.suites-home > h1.temosTambem {
+  margin-top: 20px;
 }
 .suites-home > ul {
   max-width: 1000px;
@@ -2337,7 +2337,7 @@ input:focus {
   }
 }
 .facilidades-pousada > h1 {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
@@ -2347,26 +2347,26 @@ input:focus {
 }
 @media (min-width: 30em) {
   .facilidades-pousada > h1 {
-    font-size: 20px;
+    font-size: 18px;
     margin: 0 20px 20px 20px;
     padding-bottom: 20px;
   }
 }
 @media (min-width: 48em) {
   .facilidades-pousada > h1 {
-    font-size: 22px;
+    font-size: 20px;
     border-style: none;
     padding-bottom: 0;
   }
 }
 @media (min-width: 62em) {
   .facilidades-pousada > h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 @media (min-width: 75em) {
   .facilidades-pousada > h1 {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 .facilidades-pousada > .facilidades {
@@ -2550,7 +2550,7 @@ input:focus {
   vertical-align: middle;
 }
 .facilidades-pousada > .facilidades > ul > li > a > .texto {
-  font-size: 10px;
+  font-size: 11px;
 }
 @media (min-width: 30em) {
   .facilidades-pousada > .facilidades > ul > li > a > .texto {
@@ -2700,7 +2700,7 @@ input:focus {
   }
 }
 .nossas-promocoes > .promocoes > h1 {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
@@ -2710,26 +2710,26 @@ input:focus {
 }
 @media (min-width: 30em) {
   .nossas-promocoes > .promocoes > h1 {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 20px;
     padding-bottom: 20px;
   }
 }
 @media (min-width: 48em) {
   .nossas-promocoes > .promocoes > h1 {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 @media (min-width: 62em) {
   .nossas-promocoes > .promocoes > h1 {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 30px;
     padding-bottom: 30px;
   }
 }
 @media (min-width: 75em) {
   .nossas-promocoes > .promocoes > h1 {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 .nossas-promocoes > .promocoes > form {
@@ -2822,7 +2822,7 @@ input:focus {
   top: 20px;
 }
 .nossos-contatos > h1 {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
@@ -2832,25 +2832,25 @@ input:focus {
 }
 @media (min-width: 30em) {
   .nossos-contatos > h1 {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 20px;
     padding-bottom: 20px;
   }
 }
 @media (min-width: 48em) {
   .nossos-contatos > h1 {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 @media (min-width: 62em) {
   .nossos-contatos > h1 {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 30px;
   }
 }
 @media (min-width: 75em) {
   .nossos-contatos > h1 {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 .nossos-contatos > .contatos {
@@ -2978,21 +2978,15 @@ input:focus {
 }
 .nossos-contatos > .contatos > .blocos > a {
   line-height: 120%;
-  font-size: 14px;
-}
-@media (min-width: 30em) {
-  .nossos-contatos > .contatos > .blocos > a {
-    font-size: 16px;
-  }
 }
 @media (min-width: 48em) {
   .nossos-contatos > .contatos > .blocos > a {
-    font-size: 9px;
+    font-size: 10px;
   }
 }
 @media (min-width: 62em) {
   .nossos-contatos > .contatos > .blocos > a {
-    font-size: 10px;
+    font-size: 11px;
   }
 }
 .nossos-contatos > .contatos > .blocos > ul > li a {
@@ -3319,7 +3313,7 @@ input:focus {
 }
 .suites-pousada ul li > .informacoes > .titulo {
   display: block;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 1px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding-bottom: 10px;
@@ -3328,19 +3322,19 @@ input:focus {
 }
 @media (min-width: 48em) {
   .suites-pousada ul li > .informacoes > .titulo {
-    font-size: 22px;
+    font-size: 18px;
     padding-bottom: 20px;
     margin-bottom: 20px;
   }
 }
 @media (min-width: 62em) {
   .suites-pousada ul li > .informacoes > .titulo {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 @media (min-width: 75em) {
   .suites-pousada ul li > .informacoes > .titulo {
-    font-size: 26px;
+    font-size: 22px;
     padding-bottom: 40px;
     margin-bottom: 40px;
   }

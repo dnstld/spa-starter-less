@@ -2010,13 +2010,13 @@ input:focus {
 .diferenciais-pousada > .diferenciais > ul li:first-child {
   margin-top: 0;
 }
-.diferenciais-pousada > .diferenciais > ul li > .icone {
+.diferenciais-pousada > .diferenciais > ul li > a > .icone {
   margin-right: 5px;
 }
-.diferenciais-pousada > .diferenciais > ul li > .icone.sinuca::before {
+.diferenciais-pousada > .diferenciais > ul li > a > .icone.sinuca::before {
   content: "\e90f";
 }
-.diferenciais-pousada > .diferenciais > ul li > .icone.sinuca::before {
+.diferenciais-pousada > .diferenciais > ul li > a > .icone.sinuca::before {
   font-family: 'pousada-icons' !important;
   speak: none;
   font-style: normal;
@@ -2030,10 +2030,10 @@ input:focus {
   text-align: center;
   vertical-align: middle;
 }
-.diferenciais-pousada > .diferenciais > ul li > .icone.coracao::before {
+.diferenciais-pousada > .diferenciais > ul li > a > .icone.coracao::before {
   content: "\e905";
 }
-.diferenciais-pousada > .diferenciais > ul li > .icone.coracao::before {
+.diferenciais-pousada > .diferenciais > ul li > a > .icone.coracao::before {
   font-family: 'pousada-icons' !important;
   speak: none;
   font-style: normal;
@@ -2047,10 +2047,10 @@ input:focus {
   text-align: center;
   vertical-align: middle;
 }
-.diferenciais-pousada > .diferenciais > ul li > .icone.churrasqueira::before {
+.diferenciais-pousada > .diferenciais > ul li > a > .icone.churrasqueira::before {
   content: "\e903";
 }
-.diferenciais-pousada > .diferenciais > ul li > .icone.churrasqueira::before {
+.diferenciais-pousada > .diferenciais > ul li > a > .icone.churrasqueira::before {
   font-family: 'pousada-icons' !important;
   speak: none;
   font-style: normal;
@@ -2064,10 +2064,10 @@ input:focus {
   text-align: center;
   vertical-align: middle;
 }
-.diferenciais-pousada > .diferenciais > ul li > .icone.carro::before {
+.diferenciais-pousada > .diferenciais > ul li > a > .icone.carro::before {
   content: "\e902";
 }
-.diferenciais-pousada > .diferenciais > ul li > .icone.carro::before {
+.diferenciais-pousada > .diferenciais > ul li > a > .icone.carro::before {
   font-family: 'pousada-icons' !important;
   speak: none;
   font-style: normal;
@@ -2081,10 +2081,10 @@ input:focus {
   text-align: center;
   vertical-align: middle;
 }
-.diferenciais-pousada > .diferenciais > ul li > .icone.massagem::before {
+.diferenciais-pousada > .diferenciais > ul li > a > .icone.massagem::before {
   content: "\e90b";
 }
-.diferenciais-pousada > .diferenciais > ul li > .icone.massagem::before {
+.diferenciais-pousada > .diferenciais > ul li > a > .icone.massagem::before {
   font-family: 'pousada-icons' !important;
   speak: none;
   font-style: normal;
@@ -2098,10 +2098,10 @@ input:focus {
   text-align: center;
   vertical-align: middle;
 }
-.diferenciais-pousada > .diferenciais > ul li > .icone.vintage::before {
+.diferenciais-pousada > .diferenciais > ul li > a > .icone.vintage::before {
   content: "\e911";
 }
-.diferenciais-pousada > .diferenciais > ul li > .icone.vintage::before {
+.diferenciais-pousada > .diferenciais > ul li > a > .icone.vintage::before {
   font-family: 'pousada-icons' !important;
   speak: none;
   font-style: normal;
@@ -2115,10 +2115,10 @@ input:focus {
   text-align: center;
   vertical-align: middle;
 }
-.diferenciais-pousada > .diferenciais > ul li > .icone.oriental::before {
+.diferenciais-pousada > .diferenciais > ul li > a > .icone.oriental::before {
   content: "\e91a";
 }
-.diferenciais-pousada > .diferenciais > ul li > .icone.oriental::before {
+.diferenciais-pousada > .diferenciais > ul li > a > .icone.oriental::before {
   font-family: 'pousada-icons' !important;
   speak: none;
   font-style: normal;
@@ -2132,10 +2132,10 @@ input:focus {
   text-align: center;
   vertical-align: middle;
 }
-.diferenciais-pousada > .diferenciais > ul li > .icone.hidro::before {
+.diferenciais-pousada > .diferenciais > ul li > a > .icone.hidro::before {
   content: "\e912";
 }
-.diferenciais-pousada > .diferenciais > ul li > .icone.hidro::before {
+.diferenciais-pousada > .diferenciais > ul li > a > .icone.hidro::before {
   font-family: 'pousada-icons' !important;
   speak: none;
   font-style: normal;

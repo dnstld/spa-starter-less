@@ -2,7 +2,7 @@
 	$nome = $_POST['nome'];
 	$email = $_POST['email'];
 	
-	$para = "rogersmuk@gmail.com";
+	$para = "souvip@pousadavocequesabe.com.br";
 	$assunto = "Cadastro promoções";
 	$msg = "
 		<b>Nome:</b> $nome<br />

@@ -77,11 +77,11 @@ var Pousada = {
 
     $('#slideshow-sobre').vegas({
       slides: [
-        { src: './assets/images/Empresa-Interior-e-Lavanderia/Foto-faxada-perspectiva.jpg' },
-        { src: './assets/images/Empresa-Interior-e-Lavanderia/Foto-interior-perspectiva.jpg' },
-        { src: './assets/images/Empresa-Interior-e-Lavanderia/Foto-lavanderia-perspectiva-02.jpg' },
-        { src: './assets/images/Empresa-Interior-e-Lavanderia/Foto-lavanderia-perspectiva-03.jpg' },
-        { src: './assets/images/Empresa-Interior-e-Lavanderia/Foto-lavanderia-perspectiva-04.jpg' }
+        { src: './assets/images/Empresa-Interior-e-Lavanderia/foto-panoramica-fachada-01.jpg' },
+        { src: './assets/images/Empresa-Interior-e-Lavanderia/foto-panoramica-fachada-02.jpg' },
+        { src: './assets/images/Empresa-Interior-e-Lavanderia/foto-panoramica-lavanderia-01.jpg' },
+        { src: './assets/images/Empresa-Interior-e-Lavanderia/foto-panoramica-lavanderia-02.jpg' },
+        { src: './assets/images/Empresa-Interior-e-Lavanderia/foto-panoramica-lavanderia-03.jpg' },
       ],
       animation: 'kenburns'
     });

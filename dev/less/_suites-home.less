@@ -110,6 +110,16 @@
 							background-image: url("../../assets/images/suites/thumbs/foto-thumb-suite-prata-08.jpg");
 						}
 					}
+					&.kitnet {
+						&:before {
+							background-image: url("../../assets/images/kitnet/foto-thumb-kitnet.jpg");
+						}
+					}
+					&.sexshop {
+						&:before {
+							background-image: url("../../assets/images/sexshop/foto-thumb-sexshop.jpg");
+						}
+					}
 				}
 				> .preco {
 					display: block;
@@ -168,6 +178,16 @@
 						font-size: 16px;
 					});
 				}
+				> .galeria {
+					.icon(@icon-foto, 20px);
+					display: inline-block;
+					float: right;
+					margin-right: 5%;
+				}
+				&.hidden {
+          display: none;
+          overflow: hidden;
+        }
 			}
 		}
 	}

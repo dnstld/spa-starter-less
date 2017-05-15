@@ -1,8 +1,8 @@
 .suites-pousada {
-  ul {
+  > ul {
     .clearfix;
 
-    li {
+    > li {
       border-top: 20px solid #fff;
 
       &:first-child {
@@ -205,7 +205,6 @@
             .icon(@icon-coracao);
             margin-right: 10px;
           }
-
           &.suites {
             color: @cor-logo;
           }
@@ -244,7 +243,7 @@
         }
         > .detalhes {
           .clearfix;
-          text-align: left;
+          text-align: center;
 
           > .blocos {
             margin-top: 20px;
@@ -259,7 +258,7 @@
               margin-top: 0;
             }
             > h3 {
-              display: block;
+              display: inline-block;
               font-size: 10px;
               text-transform: uppercase;
               letter-spacing: 1px;
@@ -296,6 +295,19 @@
                 .huge({
                   font-size: 20px;
                 });
+              }
+              &.obs {
+                font-size: 10px;
+                font-style: italic;
+
+                .desktop({
+                  font-size: 12px;
+                });
+              }
+            }
+            > ul {
+              li {
+                line-height: 150%;
               }
             }
           }

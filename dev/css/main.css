@@ -1561,7 +1561,7 @@ input:focus {
 }
 @media (min-width: 48em) {
   .menu-principal nav > ul li a {
-    font-size: 14px;
+    font-size: 12px;
     color: #1a1a1a;
     padding: 0 10px;
   }
@@ -3546,4 +3546,41 @@ input:focus {
 }
 .suites-pousada > ul > li > .informacoes > .detalhes > .blocos > ul li {
   line-height: 150%;
+}
+.cardapio-pousada > header {
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+@media (min-width: 62em) {
+  .cardapio-pousada > header {
+    padding: 20px;
+    margin: 0 20px;
+  }
+}
+.cardapio-pousada > header > h1 {
+  text-align: center;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+@media (min-width: 30em) {
+  .cardapio-pousada > header > h1 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 48em) {
+  .cardapio-pousada > header > h1 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 62em) {
+  .cardapio-pousada > header > h1 {
+    font-size: 22px;
+  }
+}
+@media (min-width: 75em) {
+  .cardapio-pousada > header > h1 {
+    font-size: 24px;
+  }
 }

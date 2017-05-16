@@ -1,0 +1,32 @@
+.cardapio-pousada {
+	> header {
+		.box-sizing();
+		padding: 10px;
+		margin: 0 10px;
+		border-bottom: 1px solid rgba(255, 255, 255, .2);
+
+		.desktop({
+			padding: 20px;
+			margin: 0 20px;
+		});
+
+		> h1 {
+			text-align: center;
+			line-height: 120%;
+			text-transform: uppercase;
+
+			.mobile({
+				font-size: 18px;
+			});
+			.tablet({
+				font-size: 20px;
+			});
+			.desktop({
+				font-size: 22px;
+			});
+			.huge({
+				font-size: 24px;
+			});
+		}
+	}
+}

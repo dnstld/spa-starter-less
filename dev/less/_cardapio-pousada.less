@@ -1,9 +1,21 @@
 .cardapio-pousada {
-	> header {
+	.clearfix;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 10px;
+
+	.tablet({
+		padding: 20px;
+	});
+
+	> header,
+	> .separadores {
 		.box-sizing();
+		display: block;
 		padding: 10px;
 		margin: 0 10px;
 		border-bottom: 1px solid rgba(255, 255, 255, .2);
+		text-align: center;
 
 		.desktop({
 			padding: 20px;
@@ -27,6 +39,129 @@
 			.huge({
 				font-size: 24px;
 			});
+		}
+		> .icon {
+			text-align: center;
+			color: rgba(255, 255, 255, .2);
+
+			&.refeicao {
+				.icon(@icon-comida, 24px);
+			}
+			&.bebida {
+				.icon(@icon-bebida, 24px);
+			}
+			&.cigarro {
+				.icon(@icon-cigarro, 24px);
+			}
+		}
+	}
+	> .separadores {
+		margin: 20px 0 0;
+	}
+	> .cafe {
+		.box-sizing;
+		border-radius: 5px;
+		padding: 20px;
+		margin: 20px;
+		background-color: @cor-logo;
+		text-align: center;
+		line-height: 120%;
+
+		.tablet({
+			padding: 40px;
+		});
+		.desktop({
+			width: 700px;
+			max-width: 700px;
+			margin: 20px auto;
+		});
+
+		> .titulo {
+			> span,
+			> h2 {
+				display: block;
+			}
+			> span {
+				.icon(@icon-cafe, 20px);
+			}
+			> h2 {
+				text-transform: uppercase;
+				margin-top: 5px;
+				margin-bottom: 20px;
+				font-size: 14px;
+
+				.tablet({
+					font-size: 16px;
+				});
+				.desktop({
+					font-size: 18px;
+				});
+				.huge({
+					font-size: 20px;
+				});
+			}
+		}
+		> .descricao {
+			border: 1px dashed #fff;
+			padding: 10px;
+			margin: 20px;
+			border-radius: 5px;
+
+			> .titulo,
+			> .cafe,
+			> preco {
+				display: block;
+			}
+			> .titulo {
+				font-weight: bold;
+			}
+		}
+		> .alerta {
+			font-size: 10px;
+			font-style: italic;
+		}
+	}
+	> table {
+		width: 100%;
+
+		> tbody {
+			> tr {
+				&:nth-child(even) {
+					background: #111;
+				}
+				> th {
+					padding: 20px;
+
+					> h2 {
+						text-align: center;
+						text-transform: uppercase;
+						font-size: 14px;
+						padding: 10px;
+						color: @cor-logo;
+
+						.tablet({
+							font-size: 16px;
+						});
+						.desktop({
+							font-size: 18px;
+						});
+						.huge({
+							font-size: 20px;
+						});
+					}
+				}
+				> td {
+					width: 75%;
+					padding: 5px;
+
+					&.preco {
+						width: 25%;
+						font-weight: bold;
+						white-space: nowrap;
+						text-align: right;
+					}
+				}
+			}
 		}
 	}
 }

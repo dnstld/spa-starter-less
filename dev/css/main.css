@@ -1345,8 +1345,8 @@ input:focus {
 }
 @font-face {
   font-family: 'pousada-icons';
-  src: url('../../assets/icons/pousada.eot?bhxvte');
-  src: url('../../assets/icons/pousada.eot?bhxvte#iefix') format('embedded-opentype'), url('../../assets/icons/pousada.ttf?bhxvte') format('truetype'), url('../../assets/icons/pousada.woff?bhxvte') format('woff'), url('../../assets/icons/pousada.svg?bhxvte#remoto-icons') format('svg');
+  src: url('../../assets/icons/pousada.eot?uezvug');
+  src: url('../../assets/icons/pousada.eot?uezvug#iefix') format('embedded-opentype'), url('../../assets/icons/pousada.ttf?uezvug') format('truetype'), url('../../assets/icons/pousada.woff?uezvug') format('woff'), url('../../assets/icons/pousada.svg?uezvug#remoto-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1651,6 +1651,23 @@ input:focus {
   text-align: center;
   vertical-align: middle;
 }
+.menu-principal nav > ul li a > .icone.cardapio::before {
+  content: "\e921";
+}
+.menu-principal nav > ul li a > .icone.cardapio::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
 .menu-principal nav > ul li a > .icone.localizacao::before {
   content: "\e90a";
 }
@@ -1753,10 +1770,11 @@ input:focus {
 }
 .menu-rodape > nav > ul > li > a {
   box-sizing: border-box;
+  width: 16%;
   color: #1a1a1a;
   float: left;
-  font-size: 9px;
-  padding: 0 5px;
+  font-size: 8px;
+  padding: 5px 0;
   text-align: center;
 }
 .menu-rodape > nav > ul > li > a.ativo {
@@ -1764,13 +1782,12 @@ input:focus {
 }
 @media (min-width: 30em) {
   .menu-rodape > nav > ul > li > a {
-    width: 20%;
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 @media (min-width: 48em) {
   .menu-rodape > nav > ul > li > a {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 .header-principal {
@@ -3265,81 +3282,81 @@ input:focus {
   background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-rubi-duplex-17.jpg");
 }
 .suites-pousada > ul > li > .imagem.rubi-duplex-18 {
-  background-image: url("../../assets/images/suites/Rubi-Duplex/Suíte-18/foto-suíte-18-rubi-duplex-perspectiva-01.jpg");
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-rubi-duplex-18.jpg");
 }
 .suites-pousada > ul > li > .imagem.rubi,
 .suites-pousada > ul > li > .imagem.rubi-34 {
   background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-rubi-34.jpg");
 }
 .suites-pousada > ul > li > .imagem.rubi-35 {
-  background-image: url("../../assets/images/suites/Rubi/Suíte-35/foto-suíte-35-rubiperspectiva-01.jpg");
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-rubi-35.jpg");
 }
 .suites-pousada > ul > li > .imagem.esmeralda,
 .suites-pousada > ul > li > .imagem.esmeralda-24 {
   background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-esmeralda-24.jpg");
 }
 .suites-pousada > ul > li > .imagem.esmeralda-25 {
-  background-image: url("../../assets/images/suites/Esmeralda/Suíte-25/Foto-suíte-25-esmeralda-perspectiva-01.jpg");
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-esmeralda-25.jpg");
 }
 .suites-pousada > ul > li > .imagem.perola,
 .suites-pousada > ul > li > .imagem.perola-20 {
   background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-perola-20.jpg");
 }
 .suites-pousada > ul > li > .imagem.perola-15 {
-  background-image: url("../../assets/images/suites/Perola/Suíte-15/foto-suíte-15-perola-vintage-perspectiva-01.jpg");
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-perola-15.jpg");
 }
 .suites-pousada > ul > li > .imagem.perola-19 {
-  background-image: url("../../assets/images/suites/Perola/Suíte-19/foto-suíte-19-perola-vintage-perspectiva-01.jpg");
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-perola-19.jpg");
 }
 .suites-pousada > ul > li > .imagem.diamante,
 .suites-pousada > ul > li > .imagem.diamante-11 {
   background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-diamante-11.jpg");
 }
 .suites-pousada > ul > li > .imagem.diamante-13 {
-  background-image: url("../../assets/images/suites/Diamante/Suíte-13/Foto-suíte-13-diamanete-perspectiva-01.jpg");
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-diamante-13.jpg");
 }
 .suites-pousada > ul > li > .imagem.diamante-14 {
-  background-image: url("../../assets/images/suites/Diamante/Suíte-14/Foto-suíte-14-diamanete-perspectiva-01.jpg");
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-diamante-14.jpg");
 }
 .suites-pousada > ul > li > .imagem.diamante-16 {
-  background-image: url("../../assets/images/suites/Diamante/Suíte-16/Foto-suíte-16-diamanete-perspectiva-01.jpg");
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-diamante-16.jpg");
 }
 .suites-pousada > ul > li > .imagem.diamante-21 {
-  background-image: url("../../assets/images/suites/Diamante/Suíte-21/foto-suíte-21-diamanete-perspectiva-01.jpg");
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-diamante-21.jpg");
 }
 .suites-pousada > ul > li > .imagem.diamante-23 {
-  background-image: url("../../assets/images/suites/Diamante/Suíte-23/Foto-suíte-23-diamanete-perspectiva-01.jpg");
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-diamante-23.jpg");
 }
 .suites-pousada > ul > li > .imagem.diamante-12 {
-  background-image: url("../../assets/images/suites/Diamante/Suíte-12/Foto-suíte-12-diamanete-perspectiva-01.jpg");
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-diamante-12.jpg.jpg");
 }
 .suites-pousada > ul > li > .imagem.diamante-22 {
-  background-image: url("../../assets/images/suites/Diamante/Suíte-22/Foto-suíte-22-diamanete-perspectiva-01.jpg");
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-diamante-22.jpg");
 }
 .suites-pousada > ul > li > .imagem.diamante-26 {
-  background-image: url("../../assets/images/suites/Diamante/Suíte-26/Foto-suíte-26-diamanete-perspectiva-01.jpg");
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-diamante-26.jpg");
 }
 .suites-pousada > ul > li > .imagem.diamante-28 {
-  background-image: url("../../assets/images/suites/Diamante/Suíte-28/foto-suite-28-diamante-perspectiva-01.jpg");
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-diamante-28.jpg");
 }
 .suites-pousada > ul > li > .imagem.diamante-29 {
-  background-image: url("../../assets/images/suites/Diamante/Suíte-29/foto-suite-29-diamante-perspectiva-01.jpg");
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-diamante-29.jpg");
 }
 .suites-pousada > ul > li > .imagem.diamante-30 {
-  background-image: url("../../assets/images/suites/Diamante/Suíte-30/foto-suite-30-diamante-perspectiva-01.jpg");
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-diamante-30.jpg");
 }
 .suites-pousada > ul > li > .imagem.diamante-31 {
-  background-image: url("../../assets/images/suites/Diamante/Suíte-31/foto-suite-31-diamante-perspectiva-01.jpg");
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-diamante-31.jpg");
 }
 .suites-pousada > ul > li > .imagem.diamante-27 {
-  background-image: url("../../assets/images/suites/Diamante/Suíte-27/foto-suite-27-diamante-perspectiva-01.jpg");
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-diamante-27.jpg");
 }
 .suites-pousada > ul > li > .imagem.ouro,
 .suites-pousada > ul > li > .imagem.ouro-33 {
   background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-ouro-33.jpg");
 }
 .suites-pousada > ul > li > .imagem.ouro-32 {
-  background-image: url("../../assets/images/suites/Ouro/Suíte-32/Foto-suíte-32-ouro-perspectiva-01.jpg");
+  background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-ouro-32.jpg");
 }
 .suites-pousada > ul > li > .imagem.prata {
   background-image: url("../../assets/images/suites/panoramicas/foto-panoramica-suite-prata-08.jpg");
@@ -3497,23 +3514,6 @@ input:focus {
   text-align: center;
   vertical-align: middle;
 }
-.suites-pousada > ul > li > .informacoes > .detalhes > .blocos > h3 > span.descricao::before {
-  content: "\e905";
-}
-.suites-pousada > ul > li > .informacoes > .detalhes > .blocos > h3 > span.descricao::before {
-  font-family: 'pousada-icons' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 12px;
-  text-align: center;
-  vertical-align: middle;
-}
 .suites-pousada > ul > li > .informacoes > .detalhes > .blocos > p {
   line-height: 150%;
 }
@@ -3544,43 +3544,265 @@ input:focus {
     font-size: 12px;
   }
 }
+.suites-pousada > ul > li > .informacoes > .detalhes > .blocos > ul {
+  text-align: left;
+  padding: 10px;
+  background: #222;
+  border-radius: 5px;
+}
+@media (min-width: 62em) {
+  .suites-pousada > ul > li > .informacoes > .detalhes > .blocos > ul {
+    padding: 20px;
+  }
+}
 .suites-pousada > ul > li > .informacoes > .detalhes > .blocos > ul li {
   line-height: 150%;
 }
-.cardapio-pousada > header {
+.cardapio-pousada {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.cardapio-pousada:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 48em) {
+  .cardapio-pousada {
+    padding: 20px;
+  }
+}
+.cardapio-pousada > header,
+.cardapio-pousada > .separadores {
   box-sizing: border-box;
+  display: block;
   padding: 10px;
   margin: 0 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
 }
 @media (min-width: 62em) {
-  .cardapio-pousada > header {
+  .cardapio-pousada > header,
+  .cardapio-pousada > .separadores {
     padding: 20px;
     margin: 0 20px;
   }
 }
-.cardapio-pousada > header > h1 {
+.cardapio-pousada > header > h1,
+.cardapio-pousada > .separadores > h1 {
   text-align: center;
   line-height: 120%;
   text-transform: uppercase;
 }
 @media (min-width: 30em) {
-  .cardapio-pousada > header > h1 {
+  .cardapio-pousada > header > h1,
+  .cardapio-pousada > .separadores > h1 {
     font-size: 18px;
   }
 }
 @media (min-width: 48em) {
-  .cardapio-pousada > header > h1 {
+  .cardapio-pousada > header > h1,
+  .cardapio-pousada > .separadores > h1 {
     font-size: 20px;
   }
 }
 @media (min-width: 62em) {
-  .cardapio-pousada > header > h1 {
+  .cardapio-pousada > header > h1,
+  .cardapio-pousada > .separadores > h1 {
     font-size: 22px;
   }
 }
 @media (min-width: 75em) {
-  .cardapio-pousada > header > h1 {
+  .cardapio-pousada > header > h1,
+  .cardapio-pousada > .separadores > h1 {
     font-size: 24px;
   }
+}
+.cardapio-pousada > header > .icon,
+.cardapio-pousada > .separadores > .icon {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.2);
+}
+.cardapio-pousada > header > .icon.refeicao::before,
+.cardapio-pousada > .separadores > .icon.refeicao::before {
+  content: "\e921";
+}
+.cardapio-pousada > header > .icon.refeicao::before,
+.cardapio-pousada > .separadores > .icon.refeicao::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 24px;
+  text-align: center;
+  vertical-align: middle;
+}
+.cardapio-pousada > header > .icon.bebida::before,
+.cardapio-pousada > .separadores > .icon.bebida::before {
+  content: "\e91e";
+}
+.cardapio-pousada > header > .icon.bebida::before,
+.cardapio-pousada > .separadores > .icon.bebida::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 24px;
+  text-align: center;
+  vertical-align: middle;
+}
+.cardapio-pousada > header > .icon.cigarro::before,
+.cardapio-pousada > .separadores > .icon.cigarro::before {
+  content: "\e920";
+}
+.cardapio-pousada > header > .icon.cigarro::before,
+.cardapio-pousada > .separadores > .icon.cigarro::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 24px;
+  text-align: center;
+  vertical-align: middle;
+}
+.cardapio-pousada > .separadores {
+  margin: 20px 0 0;
+}
+.cardapio-pousada > .cafe {
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #bf000a;
+  text-align: center;
+  line-height: 120%;
+}
+@media (min-width: 48em) {
+  .cardapio-pousada > .cafe {
+    padding: 40px;
+  }
+}
+@media (min-width: 62em) {
+  .cardapio-pousada > .cafe {
+    width: 700px;
+    max-width: 700px;
+    margin: 20px auto;
+  }
+}
+.cardapio-pousada > .cafe > .titulo > span,
+.cardapio-pousada > .cafe > .titulo > h2 {
+  display: block;
+}
+.cardapio-pousada > .cafe > .titulo > span::before {
+  content: "\e91f";
+}
+.cardapio-pousada > .cafe > .titulo > span::before {
+  font-family: 'pousada-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+.cardapio-pousada > .cafe > .titulo > h2 {
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+@media (min-width: 48em) {
+  .cardapio-pousada > .cafe > .titulo > h2 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 62em) {
+  .cardapio-pousada > .cafe > .titulo > h2 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 75em) {
+  .cardapio-pousada > .cafe > .titulo > h2 {
+    font-size: 20px;
+  }
+}
+.cardapio-pousada > .cafe > .descricao {
+  border: 1px dashed #fff;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+}
+.cardapio-pousada > .cafe > .descricao > .titulo,
+.cardapio-pousada > .cafe > .descricao > .cafe,
+.cardapio-pousada > .cafe > .descricao > preco {
+  display: block;
+}
+.cardapio-pousada > .cafe > .descricao > .titulo {
+  font-weight: bold;
+}
+.cardapio-pousada > .cafe > .alerta {
+  font-size: 10px;
+  font-style: italic;
+}
+.cardapio-pousada > table {
+  width: 100%;
+}
+.cardapio-pousada > table > tbody > tr:nth-child(even) {
+  background: #111;
+}
+.cardapio-pousada > table > tbody > tr > th {
+  padding: 20px;
+}
+.cardapio-pousada > table > tbody > tr > th > h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 10px;
+  color: #bf000a;
+}
+@media (min-width: 48em) {
+  .cardapio-pousada > table > tbody > tr > th > h2 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 62em) {
+  .cardapio-pousada > table > tbody > tr > th > h2 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 75em) {
+  .cardapio-pousada > table > tbody > tr > th > h2 {
+    font-size: 20px;
+  }
+}
+.cardapio-pousada > table > tbody > tr > td {
+  width: 75%;
+  padding: 5px;
+}
+.cardapio-pousada > table > tbody > tr > td.preco {
+  width: 25%;
+  font-weight: bold;
+  white-space: nowrap;
+  text-align: right;
 }

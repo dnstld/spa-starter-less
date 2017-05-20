@@ -124,4 +124,9 @@ gulp.task('images', function() {
 		.pipe(gulp.dest('production/assets'))
 });
 
-gulp.task('production', ['css','js', 'html', 'assets', 'images']);
+gulp.task('php', function() {
+	return gulp.src('processa.php')
+		.pipe(gulp.dest('production'))
+});
+
+gulp.task('production', ['css','js', 'html', 'assets', 'images', 'php']);

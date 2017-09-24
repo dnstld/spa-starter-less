@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./../../public/icon/icomoon.eot?g7o6wc');
+  src:  url('./../../public/icon/icomoon.eot?g7o6wc#iefix') format('embedded-opentype'),
+    url('./../../public/icon/icomoon.ttf?g7o6wc') format('truetype'),
+    url('./../../public/icon/icomoon.woff?g7o6wc') format('woff'),
+    url('./../../public/icon/icomoon.svg?g7o6wc#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@icon-denis-toledo-alternative: "\e900";
+@icon-denis-toledo: "\e901";
+
+.icon-content(@content) {
+  &::before {
+    content: @content;
+  }
+}
+
+.icon(@content, @size: 1) {
+  .icon-content(@content);
+
+  &::before {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 100%;
+    font-size: unit(@size, rem);
+    vertical-align: middle;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}

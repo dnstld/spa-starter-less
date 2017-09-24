@@ -1,132 +1,104 @@
 var gulp = require("gulp"),
-	less = require("gulp-less"),
-	browserSync = require("browser-sync").create();
-	watch = require('gulp-watch'),
-	minifyCSS = require("gulp-clean-css"),
-	rename = require("gulp-rename"),
-	concatJS = require("gulp-concat"),
-	minifyJS = require("gulp-uglify"),
-	deleteLines = require("gulp-delete-lines"),
-	insertLines = require("gulp-insert-lines"),
-	plumber = require("gulp-plumber"),
-	autoprefixer = require('gulp-autoprefixer'),
-	imagemin = require('gulp-imagemin'),
+    browserSync = require('browser-sync').create(),
+    less = require("gulp-less"),
+    sourcemaps = require('gulp-sourcemaps'),
+    autoprefixer = require('gulp-autoprefixer'),
+    cleanCSS = require('gulp-clean-css'),
+    rename = require("gulp-rename"),
+    concat = require('gulp-concat'),
+    uglify = require('gulp-uglify'),
+    deleteLines = require('gulp-delete-lines'),
+    insertLines = require('gulp-insert-lines'),
+    plumber = require('gulp-plumber'),
 
-	// js files
-	scripts = {
-		jquery: "node_modules/jquery/dist/jquery.js",
-		slideshow: "vendor/vegas/dist/vegas.js",
-		validation: "vendor/jquery-validation/dist/jquery.validate.js",
-		fancybox: "vendor/fancybox/dist/jquery.fancybox.js",
-		main: "dev/js/main.js"
-	};
+    // js files
+    scripts  = {
+      main: 'develop/js/main.js'
+    };
 
-/**
- * gulp
- * @desc compiles the less files and reloads the page
- */
-gulp.task("less", function() {
-	gulp.src("dev/less/main.less")
-		.pipe(plumber())
-		.pipe(less())
-		.pipe(gulp.dest("dev/css"))
-		.pipe(browserSync.reload({stream: true}));
+// Static Server + watching less/html files
+gulp.task('serve', ['less'], function() {
+  browserSync.init({
+      server: "./"
+  });
+
+  gulp.watch("develop/less/**/*.less", ['less']);
+  gulp.watch("develop/js/*.js").on('change', browserSync.reload);
+  gulp.watch("*.html").on('change', browserSync.reload);
 });
 
-gulp.task("browserSync", function() {
-	browserSync.init({
-		server: {
-			baseDir: "./",
-		},
-		browser: "google-chrome",
-		notify: false
-	});
+// Compile less into CSS & auto-inject into browsers
+gulp.task('less', function() {
+  return gulp.src("develop/less/main.less")
+    .pipe(sourcemaps.init())
+    .pipe(plumber())
+    .pipe(less())
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest("develop/css"))
+    .pipe(browserSync.stream());
 });
 
-gulp.task('default', ['browserSync', 'less'], function() {
-	gulp.watch('dev/less/**/*.less', ['less', browserSync.reload]);
-	gulp.watch('*.html', browserSync.reload);
-	gulp.watch('dev/js/**/*.js', browserSync.reload);
-});
-
-/**
- * gulp production
- * @desc prepares and saves the files in the production folder
- */
+// Autoprefixer and minify CSS
 gulp.task('css', function() {
-	return gulp.src('dev/css/main.css')
-		.pipe(autoprefixer({
-				browsers: ['last 2 versions'],
-				cascade: false
-		}))
-		.pipe(minifyCSS())
-		.pipe(rename({
-			suffix: '.min'
-		}))
-		.pipe(gulp.dest('production/dist/css'))
+  return gulp.src("develop/css/main.css")
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(cleanCSS())
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest('build/css'))
 });
 
+// Concat and minify JS
 gulp.task('js', function() {
-	return gulp.src([
-			scripts.jquery,
-			scripts.slideshow,
-			scripts.validation,
-			scripts.fancybox,
-			scripts.main
-		])
-		.pipe(concatJS('main.js'))
-		.pipe(rename({
-			suffix: '.min'
-		}))
-		.pipe(minifyJS().on('error', function() {
-			console.log(err);
-		}))
-		.pipe(gulp.dest('production/dist/js'))
+  return gulp.src([
+    scripts.main
+  ])
+    .pipe(concat('main.js'))
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(uglify().on('error', function() {
+      console.log(err);
+    }))
+    .pipe(gulp.dest('build/js'))
 });
 
+// HTML
 gulp.task('html', function() {
-	return gulp.src('*.html')
-		.pipe(deleteLines({
-			'filters': [
-				/<link\s+rel=/i
-			]
-		}))
-		.pipe(insertLines({
-			'before': /<\/head>$/,
-			'lineBefore': '		<link rel="stylesheet" type="text/css" href="dist/css/main.min.css">',
-		}))
-		.pipe(deleteLines({
-			'filters': [
-				/<script\s+src=/i
-			]
-		}))
-		.pipe(insertLines({
-			'before': /<\/body>$/,
-			'lineBefore': '		<script src="dist/js/main.min.js"></script>'
-		}))
-		.pipe(gulp.dest('production'))
+  return gulp.src('*.html')
+    .pipe(deleteLines({
+      'filters': [
+        /<link\s+rel=/i
+      ]
+    }))
+    .pipe(insertLines({
+      'before': /<\/head>$/,
+      'lineBefore': '    <link rel="stylesheet" type="text/css" href="css/main.min.css">',
+    }))
+    .pipe(deleteLines({
+      'filters': [
+        /<script\s+src=/i
+      ]
+    }))
+    .pipe(insertLines({
+      'before': /<\/body>$/,
+      'lineBefore': '    <script src="js/main.min.js"></script>'
+    }))
+    .pipe(gulp.dest('build'))
 });
 
-gulp.task('assets', function() {
-	return gulp.src('assets/**/*')
-		.pipe(gulp.dest('production/assets'))
+// assets
+gulp.task('public', function() {
+  return gulp.src('public/**/*')
+    .pipe(gulp.dest('build/public'))
 });
 
-gulp.task('images', function() {
-	return gulp.src('assets/**/*')
-		.pipe(imagemin({
-			interlaced: true,
-			progressive: true,
-			optimizationLevel: 5,
-			svgoPlugins: [{removeViewBox: true}]
-		}))
-		.pipe(plumber())
-		.pipe(gulp.dest('production/assets'))
-});
+// default task
+gulp.task('default', ['serve']);
 
-gulp.task('php', function() {
-	return gulp.src('processa.php')
-		.pipe(gulp.dest('production'))
-});
-
-gulp.task('production', ['css','js', 'html', 'assets', 'images', 'php']);
+// build task
+gulp.task('build', ['css', 'js', 'html', 'public']);

@@ -1,0 +1,47 @@
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.box-sizing(@type: border-box) {
+  box-sizing: @type;
+}
+
+.placeholder(@rules) {
+  &::-webkit-input-placeholder {
+    @rules();
+  }
+  &:-moz-placeholder {
+    @rules();
+  }
+  &::-moz-placeholder {
+    @rules();
+  }
+  &:-ms-input-placeholder {
+    @rules();
+  }
+}
+
+.for-tablet-portrait-up(@rules) {
+  @media (min-width: 37.500em) { // 600px
+    @rules();
+  }
+}
+.for-tablet-landscape-up(@rules) {
+  @media (min-width: 56.250em) { // 900px
+    @rules();
+  }
+}
+.for-desktop-up(@rules) {
+  @media (min-width: 75.000em) { // 1200px
+    @rules();
+  }
+}
+.for-big-desktop-up(@rules) {
+  @media (min-width: 112.500em) { //1800px
+    @rules();
+  }
+}
